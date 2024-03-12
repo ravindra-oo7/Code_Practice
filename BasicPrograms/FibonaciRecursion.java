@@ -1,4 +1,4 @@
-public class fibonaciRecursion {
+public class FibonaciRecursion {
     
         static int n1=0,n2=1,n3=0;    
         static void printFibonacci(int count){    
