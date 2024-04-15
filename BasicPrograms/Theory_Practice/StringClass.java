@@ -1,3 +1,5 @@
+package Theory_Practice;
+
 public class StringClass {
     public static void main(String[] args) {
         String s1 = "ravindra";

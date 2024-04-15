@@ -1,3 +1,5 @@
+package Theory_Practice;
+
 public class SingletonClass{
     public static void main(String[] args)
     {

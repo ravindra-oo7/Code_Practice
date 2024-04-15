@@ -1,3 +1,5 @@
+package Theory_Practice;
+
 public class SingletonClass2 {
     public static void main(String[] args) {
         Singleton singleton1 = Singleton.getInstence();
