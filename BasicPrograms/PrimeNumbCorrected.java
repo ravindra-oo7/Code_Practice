@@ -32,7 +32,6 @@ public class PrimeNumbCorrected {
         } else {
             isPrime(num1);
         }
-        System.out.println(Math.sqrt(3));
     }
 
 
