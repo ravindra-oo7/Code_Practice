@@ -5,13 +5,13 @@ public class UniqueTripletQue
 {    
     public static void main(String[] args) 
     {
-        int[] l = {2, 5, 9, 6, 2, 6, 9, 5};
+        int[] l = {2, 5, 9, 6, 2, 6, 9, 5,4};
         ArrayList<Integer> l1 = new ArrayList<>();
 
         int n = l.length;
-        for (int i = 0; i < n; i++) 
+        for (int i = 0; i < n-2; i++) 
         {
-            for (int j = i + 1; j < n; j++) 
+            for (int j = i + 1; j < n-1; j++) 
             {
                 for (int k = j + 1; k < n; k++) 
                 {

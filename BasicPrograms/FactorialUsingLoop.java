@@ -7,11 +7,12 @@ public class FactorialUsingLoop {
         Scanner sc = new Scanner(System.in);
 
         int num = sc.nextInt();
-        factorial(num);
+        FactorialUsingLoop obj = new FactorialUsingLoop();
+        obj.factorial(num);
         sc.close();
     }
 
-    private static void factorial(int num) {
+    private  void factorial(int num) {
         int fact=1;
         for(int i=num;i>0;i--){
             fact*=i;

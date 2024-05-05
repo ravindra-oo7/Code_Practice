@@ -29,7 +29,7 @@ public class IsArmstrongNumb {
             numb2 = numb2 / 10;
         } while (numb2 > 0);
 
-        System.out.println(sum +" "+numb1);
+        System.out.println("Sum : "+ sum );
         if (sum.equals(numb1)) 
         {
             return true;
