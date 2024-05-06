@@ -9,10 +9,10 @@ public class StarPattern1 {
 
         Scanner sc = new Scanner(System.in);
 
-        System.out.print("Enter Number : ");
-        int num = sc.nextInt();
+        System.out.print("Enter Rows : ");
+        int row = sc.nextInt();
         
-        for(int i=0;i<num;i++)
+        for(int i=0;i<row;i++)
         {
             for(int j=0;j<=i;j++)
             {
@@ -26,19 +26,17 @@ public class StarPattern1 {
 
 //Right Triangular Pattern
 
-
+/* 
      public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
 
-        System.out.print("Enter Num : ");
-        int num = sc.nextInt();
+        System.out.print("Enter rows : ");
+        int row = sc.nextInt();
 
-        int count=0;
-
-        for(int i=0;i<num;i++)
+        for(int i=0;i<row;i++)
         {
-            for(int j=num-i;j>=0;j--)
+            for(int j=row-i;j>=0;j--)
             {
                 System.out.print(" ");
             }
@@ -49,8 +47,103 @@ public class StarPattern1 {
             System.out.println();
         }
     } 
-    
-    
+  */   
 
 
-}
+/*     
+    //JavaTpoint code
+    public static void main(String args[])   
+    {    
+
+        int i, j, row = 6;       
+        for (i=0; i<row; i++)   
+        {  
+            //inner loop work for space      
+            for (j=2*(row-i); j>=0; j--)         
+            {  
+                //prints space between two stars      
+                System.out.print(" ");   
+            }   
+            //inner loop for columns  
+            for (j=0; j<=i; j++ )   
+            {   
+                //prints star      
+                System.out.print("* ");   
+            }   
+
+            System.out.println();   
+        }   
+    }   
+ */
+//----------------------------------------------------------------------------------------------------------------------------
+
+/* 
+//Pyramid Star pattern
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter Rows : ");
+        int row = sc.nextInt();
+
+        for(int i=0;i<row;i++)
+        {
+            for(int j=row-i;j>=0;j--)
+            {
+                System.out.print(" ");
+            }
+            for(int k=0;k<=i;k++)
+            {
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
+    } 
+
+ */
+//------------------------------------------------------------------------------------
+
+//Diamond pattern
+
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter Rows : ");
+        int row = sc.nextInt();
+
+        for(int i=0;i<row;i++)
+        {
+            for(int j=row-i;j>=0;j--)
+            {
+                System.out.print(" ");
+            }
+            for(int k=0;k<=i;k++)
+            {
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
+
+        for(int i=row-1;i>=0;i--)
+        {
+            for(int j=i-1;j<=row;j++)
+            {
+                System.out.print(" ");
+            }
+            for(int k=i;k>0;k--)
+            {
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
+    } 
+
+
+
+
+
+} 
+
+
+
