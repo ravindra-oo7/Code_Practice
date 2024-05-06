@@ -102,7 +102,7 @@ public class StarPattern1 {
 
  */
 //------------------------------------------------------------------------------------
-
+/* 
 //Diamond pattern
 
     public static void main(String[] args) {
@@ -125,7 +125,7 @@ public class StarPattern1 {
             System.out.println();
         }
 
-        for(int i=row-1;i>=0;i--)
+        for(int i=row-1;i>0;i--)
         {
             for(int j=i-1;j<=row;j++)
             {
@@ -139,9 +139,27 @@ public class StarPattern1 {
         }
     } 
 
+*/
+//------------------------------------------------------------------------------------
 
+//Downword Triangle Star pattern
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
 
+        System.out.print("Enter Rows : ");
+        int row = sc.nextInt();
+        
+        for (int i = 0; i <row; i++) 
+        {
+            for(int j=row;j>i;j--)
+            {
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
+    }
 
+//------------------------------------------------------------------------------------
 
 } 
 
