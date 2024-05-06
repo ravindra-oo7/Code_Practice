@@ -142,6 +142,8 @@ public class StarPattern1 {
 */
 //------------------------------------------------------------------------------------
 
+/* 
+
 //Downword Triangle Star pattern
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -157,9 +159,95 @@ public class StarPattern1 {
             }
             System.out.println();
         }
-    }
+    }     
+ */
+/*   
+    public static void main(String[] args) {
+    
+        Scanner sc = new Scanner(System.in);
+    
+        System.out.print("Enter Rows : ");
+        int row = sc.nextInt();
+    
+        for(int i=0;i<row;i++)
+        {
+            for(int j=0;j<i;j++)
+            {
+                System.out.print("  ");
+            }
+    
+            for(int j=row;j>i;j--)
+            {
+                System.out.print("* ");
+            }
+            System.err.println();
+        }
+
+    }    
+*/
 
 //------------------------------------------------------------------------------------
+
+//Reverse Pyramid Star Pattern
+ 
+/* 
+    public static void main(String[] args) {
+        
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter Rows : ");
+        int row = sc.nextInt();
+
+        for(int i=0;i<row;i++)
+        {
+            for(int j=0;j<i;j++)
+            {
+                System.out.print(" ");
+            }
+
+            for(int j=row;j>i;j--)
+            {
+                System.out.print("* ");
+            }
+            System.err.println();
+        }
+    } 
+ */
+
+ //------------------------------------------------------------------------------------
+
+ //Right Pascal's Triangle
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter Rows : ");
+        int row = sc.nextInt();
+        int count ;
+
+        for(count=0;count<row;count++)
+        {
+            for(int j=0;j<=count;j++)
+            {
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
+        for(;count-1>0;count--)
+        {
+            for(int k=count-1;k>0;k--)
+            {
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
+
+    }
+
+
+        
+    
+
 
 } 
 
