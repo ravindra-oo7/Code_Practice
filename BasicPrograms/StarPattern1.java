@@ -396,7 +396,7 @@ public class StarPattern1 {
 //------------------------------------------------------------------------------------
 
  // Downword Triangular star pattern
-   
+/*    
     public static void main(String[] args) 
     {
         Scanner sc = new Scanner(System.in);
@@ -425,7 +425,7 @@ public class StarPattern1 {
             System.out.println();
         }
     }    
-  
+ */  
 
 /* 
    //JavaTpoint code for Downward hollow star pattern
@@ -456,6 +456,39 @@ public class StarPattern1 {
     }  
 
  */
+//------------------------------------------------------------------------------------
+
+ // Hollow Diamond star pattern 
+
+    public static void main(String[] args) 
+    {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter number : ");
+        final int base = sc.nextInt();
+        int rows = (base*2)-1;
+
+        for(int i=0;i<rows;i++)
+        {
+            for(int j=0;j<=rows;j++)
+            {
+                if(j==base-i || j==base+i)
+                {
+                    System.out.print("*");
+                }
+                else
+                {
+                    System.out.print(" ");
+                }
+            }
+            System.out.println();
+
+            
+
+        }
+    }
+
+
 
 } 
 
