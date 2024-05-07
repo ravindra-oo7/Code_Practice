@@ -248,15 +248,14 @@ public class StarPattern1 {
  //------------------------------------------------------------------------------------
 
  //Left Pascal's Triangle
-
+/* 
     public static void main(String[] args) 
     {
         Scanner sc = new Scanner(System.in);
 
         System.out.print("Enter Rows : ");
         int row = sc.nextInt();
-        int count ;
-
+    
         for(int i=0;i<row;i++)
         {
             for(int j=row-1;j>i;j--)
@@ -284,7 +283,80 @@ public class StarPattern1 {
         
         }
     }    
-    
+*/    
+//------------------------------------------------------------------------------------
+
+ //Sandglass star pattern
+/* 
+    public static void main(String[] args) 
+    {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter Rows : ");
+        int row = sc.nextInt();
+        int count;
+
+        for (int i=0;i<row;i++)
+        {
+            for(int j=0;j<i;j++)
+            {
+                System.out.print(" ");
+            }
+            for(count=i;count<row;count++)
+            {
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
+
+        for (int i=0;i<row;i++)
+        {
+            for(int j=row-1;j>i;j--)
+            {
+                System.out.print(" ");
+            }
+            for(int k=0;k<=i;k++)
+            {
+                System.out.print("* ");
+            }
+            System.out.println();
+
+
+        }
+        
+    }
+ */
+
+//------------------------------------------------------------------------------------
+
+ //Triangular star pattern
+ 
+    public static void main(String[] args) 
+    {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter Odd number to print Traingle : ");
+        int base = sc.nextInt();
+
+        for(int i=base/2;i>0;i--)
+        {
+            for(int j=0;j<base;j++)
+            {
+                if(j==((base/2)-j))
+                {
+                    System.out.print("*");
+                }
+                else{
+                    System.out.print(" ");
+                }
+                if(i==1)
+                {
+                    System.out.print("*");
+                }
+            }
+            System.out.println();
+        }
+    }    
 
 
 } 
