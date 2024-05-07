@@ -217,7 +217,7 @@ public class StarPattern1 {
  //------------------------------------------------------------------------------------
 
  //Right Pascal's Triangle
-
+/* 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
@@ -243,9 +243,47 @@ public class StarPattern1 {
         }
 
     }
+ */
 
+ //------------------------------------------------------------------------------------
 
+ //Left Pascal's Triangle
+
+    public static void main(String[] args) 
+    {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter Rows : ");
+        int row = sc.nextInt();
+        int count ;
+
+        for(int i=0;i<row;i++)
+        {
+            for(int j=row-1;j>i;j--)
+            {
+                System.out.print(" ");
+            }
+            for(int k=0;k<=i;k++)
+            {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+
+        for(int i=0;i<row-1;i++)
+        {
+            for(int j=0;j<=i;j++)
+            {
+                System.out.print(" ");
+            }
+            for(int k=row-1;k>i;k--)
+            {
+                System.out.print("*");
+            }
+            System.out.println();
         
+        }
+    }    
     
 
 
