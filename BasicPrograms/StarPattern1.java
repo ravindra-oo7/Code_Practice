@@ -338,6 +338,12 @@ public class StarPattern1 {
         System.out.print("Enter Odd number to print Traingle : ");
         int base = sc.nextInt();
 
+        if (base % 2 == 0) 
+        {
+        System.out.println("Error: Please enter an odd number of rows.");
+        return;
+        }
+
         for(int i=0;i<base/2;i++)
         {
             for(int j=0;j<base;j++)
@@ -387,7 +393,69 @@ public class StarPattern1 {
     } 
 */ 
 
+//------------------------------------------------------------------------------------
 
+ // Downword Triangular star pattern
+   
+    public static void main(String[] args) 
+    {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter Odd number to print Traingle : ");
+        int base = sc.nextInt();
+
+        if (base % 2 == 0) 
+        {
+        System.out.println("Error: Please enter an odd number of rows.");
+        return;
+        }
+        
+        for(int i=0;i<(base/2)+1;i++)
+        {
+            for(int j=0;j<base;j++)
+            {
+                if(i==0 || j== i || j== base-1-i)
+                {
+                    System.out.print("*");
+                }   
+                else{
+                    System.out.print(" ");
+                } 
+            }
+            System.out.println();
+        }
+    }    
+  
+
+/* 
+   //JavaTpoint code for Downward hollow star pattern
+
+    public static void main(String[] args)  
+    {  
+        int i, j, k, rows=9;     
+        for (i=rows; i>= 1 ; i--)  
+        {  
+            for (j = i; j<rows ; j++)   
+            {  
+                 System.out.print(" ");  
+            } 
+
+            for (k = 1; k <= (2*i -1) ;k++)   
+            {  
+                if( k==1 || i == rows || k==(2*i-1))   
+                {  
+                     System.out.print("*");  
+                }  
+                else   
+                {  
+                     System.out.print(" ");  
+                }  
+            }  
+            System.out.println("");  
+        }  
+    }  
+
+ */
 
 } 
 
