@@ -330,7 +330,7 @@ public class StarPattern1 {
 //------------------------------------------------------------------------------------
 
  //Triangular star pattern
- 
+ /* 
     public static void main(String[] args) 
     {
         Scanner sc = new Scanner(System.in);
@@ -338,25 +338,55 @@ public class StarPattern1 {
         System.out.print("Enter Odd number to print Traingle : ");
         int base = sc.nextInt();
 
-        for(int i=base/2;i>0;i--)
+        for(int i=0;i<base/2;i++)
         {
             for(int j=0;j<base;j++)
             {
-                if(j==((base/2)-j))
+                if(j==((base/2)-i) || j==((base/2)+i) )
                 {
                     System.out.print("*");
-                }
+                }   
                 else{
                     System.out.print(" ");
-                }
-                if(i==1)
-                {
-                    System.out.print("*");
-                }
+                } 
             }
             System.out.println();
         }
+        for(int i=0;i<base;i++)
+        {
+            System.out.print("*");
+        }
     }    
+ */
+
+// Triangle Star pattern from JavaTpoint
+/* 
+    public static void main(String[] args)  
+    {  
+        int i, j, k, rows=3;  
+        for (i=1; i<= rows ; i++)  
+        {  
+            for (j = i; j < rows ; j++)   
+            {  
+                 System.out.print(" ");  
+            } 
+
+            for (k = 1; k <= (2*i -1) ;k++)   
+            {  
+                if(k==1 || i == rows || k==(2*i-1))   
+                {  
+                    System.out.print("*");  
+                }  
+                else   
+                {  
+                    System.out.print(" ");  
+                }  
+            }  
+            System.out.println("");  
+        }  
+    } 
+*/ 
+
 
 
 } 
