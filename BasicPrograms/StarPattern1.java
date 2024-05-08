@@ -459,7 +459,7 @@ public class StarPattern1 {
 //------------------------------------------------------------------------------------
 
  // Hollow Diamond star pattern 
-
+/* 
     public static void main(String[] args) 
     {
         Scanner sc = new Scanner(System.in);  
@@ -505,7 +505,7 @@ public class StarPattern1 {
                 System.out.println("*");  
         }  
     }  
-      
+ */      
 
 
 } 
