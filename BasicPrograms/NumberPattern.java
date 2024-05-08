@@ -24,7 +24,7 @@ public class NumberPattern {
 //-------------------------------------------------------------------
 
 //Pattern 02   
-
+/* 
     public static void main(String[] args) 
     {
         
@@ -44,7 +44,16 @@ public class NumberPattern {
         } 
 
     }
+ */
 
+//------------------------------------------------------------------------
 
+//Pattern 03
+
+    public static void main(String[] args) {
+
+        
+
+    }
 
 }
