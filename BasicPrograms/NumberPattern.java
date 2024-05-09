@@ -77,7 +77,7 @@ public class NumberPattern {
 //------------------------------------------------------------------------
 
 //Pattern 04
-
+/* 
     public static void main(String[] args)   
     {  
         Scanner sc = new Scanner(System.in);
@@ -123,7 +123,25 @@ public class NumberPattern {
             System.out.println();  
         }   
     }  
+ */
 
-            
+//------------------------------------------------------------------------------
+ 
+//Pattern 04
+ 
+    public static void main(String[] args)   
+    {  
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter Rows : ");
+        int rows = sc.nextInt();
 
+        for(int i=0;i<rows;i++)
+        {
+            for(int j=0;j<=i;j++)
+            {
+                System.out.print(i+1 +" ");
+            }
+            System.out.println();
+        }
+    }
 }
