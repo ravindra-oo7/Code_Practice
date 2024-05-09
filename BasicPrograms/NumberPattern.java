@@ -169,7 +169,7 @@ public class NumberPattern {
 
 //---------------------------------------------------------------------------------------
 //Pattern 07
-
+/* 
     public static void main(String[] args)   
     {  
         Scanner sc = new Scanner(System.in);
@@ -185,5 +185,64 @@ public class NumberPattern {
             System.out.println();
         }
     }
+ */ 
+
+//---------------------------------------------------------------------------------------
+//Pattern 08
+
+/* 
+    public static void main(String[] args)   
+    {  
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter Rows : ");
+        int rows = sc.nextInt();
+        boolean flag=true;
+
+        for(int i=0;i<rows;i++)
+        {
+            for(int j=0;j<rows;j++)
+            {
+              if(flag){
+                System.out.print("1");
+                flag=false;
+              }
+              else{
+                System.out.print("0");
+                flag=true;
+              }   
+            }
+            System.out.println();
+        }
+    }
+*/
+
+//---------------------------------------------------------------------------------------
+//Pattern 09
  
+public static void main(String[] args)   
+{  
+    Scanner sc = new Scanner(System.in);
+    System.out.print("Enter Rows : ");
+    int rows = sc.nextInt();
+    boolean flag=true;  
+
+    for(int i=0;i<rows;i++)
+    {
+        flag=true;
+        for(int j=0;j<=i;j++)
+        {
+            if(flag){
+                System.out.print("1");
+                flag=false;
+            }
+            else{
+                System.out.print("0");
+                flag=true;
+            }
+        }
+        System.out.println();
+    }
+
+}      
+
 }
