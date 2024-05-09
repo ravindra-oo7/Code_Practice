@@ -49,7 +49,7 @@ public class NumberPattern {
 //------------------------------------------------------------------------
 
 //Pattern 03
-
+/* 
     public static void main(String[] args)   
     {  
         Scanner sc = new Scanner(System.in);
@@ -71,6 +71,59 @@ public class NumberPattern {
             }  
             System.out.println();  
         }  
+    }
+*/  
+
+//------------------------------------------------------------------------
+
+//Pattern 04
+
+    public static void main(String[] args)   
+    {  
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter Rows : ");
+        int num = sc.nextInt();
+        int rows=(num*2)-1;
+
+        for (int i = 1; i <= num; i++)  
+        {  
+            int n = rows;  
+            for (int j = 1; j<= n - i; j++)   
+            {   
+                System.out.print(" ");   
+            } 
+
+            for (int k = i; k >= 1; k--)  
+            {  
+                System.out.print(k);  
+            }
+
+            for (int l = 2; l <= i; l++)   
+            {  
+                System.out.print(l);   
+            }   
+            System.out.println();   
+        }   
+         
+        for (int i = num-1; i >= 1; i--)  
+        {  
+            int n = rows;  
+            for (int j = 1; j<= n - i; j++)   
+            {  
+                System.out.print(" ");   
+            }   
+            for (int k = i; k >= 1; k--)  
+            {  
+                System.out.print(k);  
+            }  
+            for (int l = 2; l <= i; l++)  
+            {  
+                System.out.print(l);  
+            }  
+            System.out.println();  
+        }   
     }  
+
+            
 
 }
