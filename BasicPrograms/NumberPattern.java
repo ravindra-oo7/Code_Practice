@@ -356,22 +356,54 @@ public static void main(String[] args)
  */  
 //---------------------------------------------------------------------------------------
 //Pattern 14
- 
-public static void main(String[] args)   
-{  
-    Scanner sc = new Scanner(System.in);
-    System.out.print("Enter Rows : ");
-    int rows = sc.nextInt();
+/*  
+    public static void main(String[] args)   
+    {  
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter Rows : ");
+        int rows = sc.nextInt();
 
-    for(int i=rows;i>0;i--)
-    {
-        for(int j=i;j>0;j--)
+        for(int i=rows;i>0;i--)
         {
-            System.out.print(j +" ");
+            for(int j=i;j>0;j--)
+            {
+                System.out.print(j +" ");
+            }
+            System.out.println();
         }
-        System.out.println();
-    }
 
-}  
+    }  
+ */   
+//---------------------------------------------------------------------------------------
+//Pattern 15
+ 
+    public static void main(String[] args)   
+    {  
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter Rows : ");
+        int rows = sc.nextInt();
+        int count,j;
+
+        for(int i=1;i<=rows;i++)
+        {
+            count=1;
+            for(j=1;j<=i;j++)
+            {
+                System.out.print(j+" ");
+                count++;
+            }
+            if(count==i)
+            {
+                for(int k=j;k>0;k--)
+                {
+                    System.out.print(k+" ");
+                    count--;
+                } 
+            }
+            System.out.println();
+        }
+        
+    }
+ 
 
 }
