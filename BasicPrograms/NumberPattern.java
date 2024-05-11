@@ -525,8 +525,8 @@ public static void main(String[] args)
     }
  */   
 //---------------------------------------------------------------------------------------
-//Pattern 19
-
+//Pattern 20
+/* 
     public static void main(String[] args)   
     {  
         Scanner sc = new Scanner(System.in);
@@ -547,5 +547,31 @@ public static void main(String[] args)
 
         }
     }
+ */
+//---------------------------------------------------------------------------------------
+//Pattern 21
 
+    public static void main(String[] args)   
+    {  
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter Rows : ");
+        int rows = sc.nextInt();  
+        int count; 
+
+        for(int i=rows;i>0;i--)
+        {
+            count=rows;
+            for(int j=rows;j>0;j--)
+            {
+                if(count==i){
+                    System.out.print(count+" ");
+                }
+                else{
+                    System.out.print(count+" ");
+                    count--;
+                }
+            }
+            System.out.println();
+        }
+    } 
 }
