@@ -123,7 +123,7 @@ public class CharacterPattern {
     
             for(int j=rows-1;j>=i;j--)
             {
-                System.out.print("*");
+                System.out.print(" ");
             }
 
             for(int j=1;j<=i;j++)
@@ -133,25 +133,50 @@ public class CharacterPattern {
                 }
                 else
                 {                
-                    System.out.print("*");
+                    System.out.print(" ");
                 }
             }
             for(int j=2;j<i;j++)
             {
-                System.out.print("*");
+                System.out.print(" ");
             }
             if(i!=1){
                 System.out.print((char)(count));
-                count++;
             }
+            count++;
 
             System.out.println();
         }
-
         
+        //Lower Half of Pattern
+        count=count-1;
+        for(int i=1;i<rows;i++)
+        {
+            for(int j=1;j<=i;j++)
+            {
+                System.out.print(" ");
+            }
 
-
+            for(int j=1;j<=i;j++)
+            {
+                if(j==1){
+                System.out.print((char)(count-1));
+                }
+            }
+            for(int j=rows-1;j>i;j--)
+            {
+                System.out.print(" ");
+            }
+            for(int j=rows-2;j>i;j--)
+            {
+                System.out.print(" ");
+            }
+            if(i!=rows-1)
+            {
+                System.out.print((char)(count-1));
+            }    
+            count--;
+            System.out.println();
+        }
     }
-
-
 }
