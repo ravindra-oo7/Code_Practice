@@ -550,7 +550,7 @@ public static void main(String[] args)
  */
 //---------------------------------------------------------------------------------------
 //Pattern 21
-
+/* 
     public static void main(String[] args)    
     {   
         int i, j, min;
@@ -595,4 +595,5 @@ public static void main(String[] args)
         }   
            
     }   
+ */    
 }
