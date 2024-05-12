@@ -1,7 +1,5 @@
 import java.util.Scanner;
 
-import javax.sql.rowset.spi.SyncResolver;
-
 public class PalindromeChecker {
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
@@ -10,21 +8,23 @@ public class PalindromeChecker {
         
         if(isPalindrome(str))
         {
-            System.out.println(str +" is Palindrome!");
+            System.out.println("/ "+str +" / is Palindrome!");
         }else
         {
-            System.err.println(str + "is not Palindrome! ");
+            System.err.println("/ "+str + " / is not Palindrome! ");
         }
 
     }
 
     private static boolean isPalindrome(String str) {
-       //Step1: Convert the String to lowercase
+       //Step 1: Convert the String to lowercase
        String cleanString = str.toLowerCase(); 
 
-       //Step2: 
+       //Step 2: Reverse the String
+       String reversed = new StringBuilder(cleanString).reverse().toString();
 
-
+        //Step 3: Compare the orignal with the reversed String
+        return cleanString.equals(reversed);
     }
     
 }
