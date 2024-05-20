@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class StarPattern1 {
 
-/*     
+    
 //Left Triangular Pattern
 
     public static void main(String[] args) {
@@ -21,7 +21,7 @@ public class StarPattern1 {
             System.out.println();
         }
     }
- */
+
 //------------------------------------------------------------------------------------------------
 
 //Right Triangular Pattern
