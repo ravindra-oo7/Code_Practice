@@ -10,7 +10,8 @@ public class RemoveRepeatedChar {
         System.out.print("Enter String : ");
         String strOrignal = sc.next();
 
-        //Approach-01
+/* 
+        //Aproach-01
         HashSet<Character> charSet = new LinkedHashSet<>();
         
         for(int i=0;i<strOrignal.length();i++){
@@ -21,6 +22,17 @@ public class RemoveRepeatedChar {
         {
             System.out.print(character);    
         }
+ */
+
+        //Aproach-02
+        StringBuilder strBD = new StringBuilder();
+        strOrignal.chars()
+                    .distinct()
+                    .forEach(c->{
+                        strBD.append((char)c);
+                    });
+
+        System.out.println(strBD);
 
     }
 }
