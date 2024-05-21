@@ -9,8 +9,14 @@ public class RemoveSpaces {
         System.out.print("Enter String : ");
         String strOrignal = sc.nextLine();
 
+/* 
         //Approach01
         String strProccesed = strOrignal.replaceAll(" ","");
+        System.out.println(strProccesed);
+ */
+        
+        //Approach02
+        String strProccesed = strOrignal.replaceAll("\\s","");
         System.out.println(strProccesed);
 
     }
