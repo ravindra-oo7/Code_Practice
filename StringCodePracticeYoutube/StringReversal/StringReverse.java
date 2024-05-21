@@ -37,7 +37,7 @@ public class StringReverse {
     */
 
         //Aproach-04
-        
-
+        StringBuilder strBuilder = new StringBuilder(strOrignal);
+        System.out.println(strBuilder.reverse());
     }        
 }
