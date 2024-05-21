@@ -18,11 +18,26 @@ public class StringReverse {
         }
         System.out.println(strNew);
     */
+    
+    /* 
+        //Aproach-02
         char[] charArray = strOrignal.toCharArray(); 
 
         for (int i=charArray.length-1;i>=0;i--) 
         {
             System.out.print(charArray[i]+" ");
         }
+    */
+
+    /* 
+        //Aproach-03
+        StringBuffer strBuffer = new StringBuffer(strOrignal);
+        strBuffer.reverse();
+        System.out.println(strBuffer);
+    */
+
+        //Aproach-04
+        
+
     }        
 }
