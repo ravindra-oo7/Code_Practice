@@ -24,14 +24,15 @@ public class LongestRepeatingSequence {
             }
         }
         
-        // map1.forEach((key,value)->{
-            //    System.out.print(" key : "+key);
-            //    System.out.println(" value : "+value); 
-            // });
-        for (Map.Entry<Integer,Character> entry : map1.entrySet()) 
-        {
-             System.out.println("Key: " + entry.getKey() + ", Value: " + entry.getValue());
-        }
+        map1.forEach((key,value)->{
+               System.out.print(" key : "+key);
+               System.out.println(" value : "+value); 
+            });
+
+        // for (Map.Entry<Integer,Character> entry : map1.entrySet()) 
+        // {
+        //      System.out.println("Key: " + entry.getKey() + ", Value: " + entry.getValue());
+        // }
 
         // for(char i='A'; i<= 'Z';i++){
         //     System.out.println("ASCII value of "+i+" is :" + (int)i);
