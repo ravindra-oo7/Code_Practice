@@ -8,6 +8,8 @@ public class RemoveSpeacialChars {
         System.out.print("Enter String : ");
         String strOrignal = sc.next();
 
+/* 
+        //Aproach-01
         for(int i=0;i<strOrignal.length();i++)
         {
             if(
@@ -19,6 +21,10 @@ public class RemoveSpeacialChars {
                     System.out.print(strOrignal.charAt(i));
                 }
         }
+ */
+
+        String newStr = strOrignal.replaceAll("[^a-zA-Z0-9]","");
+        System.out.print(newStr);
 
     }
 }
