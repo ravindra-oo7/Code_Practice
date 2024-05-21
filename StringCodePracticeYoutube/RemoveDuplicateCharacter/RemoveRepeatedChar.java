@@ -24,6 +24,7 @@ public class RemoveRepeatedChar {
         }
  */
 
+/* 
         //Aproach-02
         StringBuilder strBD = new StringBuilder();
         strOrignal.chars()
@@ -33,6 +34,20 @@ public class RemoveRepeatedChar {
                     });
 
         System.out.println(strBD);
+ */
 
+        //Aproach-03
+        StringBuilder strBD = new StringBuilder();
+
+        for(int i=0;i<strOrignal.length();i++)
+        {
+            char ch =strOrignal.charAt(i);
+            int idx = strOrignal.indexOf(ch, i+1);
+            if(idx==-1)
+            {
+                strBD.append(ch);
+            }
+        }
+        System.out.println(strBD);
     }
 }
