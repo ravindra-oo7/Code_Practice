@@ -8,19 +8,21 @@ public class StringReverse {
 
         System.out.print("Enter String : ");
         String strOrignal = sc.next();
+ 
+    /*   //Aproach-01
         StringBuilder strNew = new StringBuilder();
-
-
-       // char[] charArray = strOrignal.toCharArray();   
-        // for (char e : charArray) {
-        //     System.out.print(e+" ");
-        // }
-
-         for (int i=strOrignal.length()-1;i>=0;i--) 
-         {
+        
+        for (int i=strOrignal.length()-1;i>=0;i--) 
+        {
             strNew.append(strOrignal.charAt(i));    
-         }
-         System.out.println(strNew);
+        }
+        System.out.println(strNew);
+    */
+        char[] charArray = strOrignal.toCharArray(); 
 
-    }
+        for (int i=charArray.length-1;i>=0;i--) 
+        {
+            System.out.print(charArray[i]+" ");
+        }
+    }        
 }
