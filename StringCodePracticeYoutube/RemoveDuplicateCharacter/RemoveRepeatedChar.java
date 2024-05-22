@@ -52,7 +52,7 @@ public class RemoveRepeatedChar {
         System.out.println(strBD);
  */
 
-
+/* 
         //Approach-04
         char [] charArray = strOrignal.toCharArray();
         StringBuilder strBD = new StringBuilder();
@@ -71,10 +71,12 @@ public class RemoveRepeatedChar {
 
             if(!repeated){
                 strBD.append(charArray[i]);
-            }
-            
+            }           
         }
         System.out.print(strBD);
+ */
 
+
+ 
     }
 }
