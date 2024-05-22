@@ -1,4 +1,5 @@
 package StringSorter;
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class StringSorter {
@@ -6,9 +7,10 @@ public class StringSorter {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter String : ");
         String strOrignal = sc.next();
-
-        //Approach-01
         char[] charArray = strOrignal.toCharArray();
+
+/*         
+        //Approach-01 Without using sort Method
 
         for(int i=0;i<charArray.length-1;i++)
         {
@@ -26,7 +28,12 @@ public class StringSorter {
         {
             System.out.print(charArray[i]);
         }
-        
+*/
+
+        //Approach-02
+        Arrays.sort(charArray);
+        System.out.println(new String(charArray));
+
     }
 
 }
