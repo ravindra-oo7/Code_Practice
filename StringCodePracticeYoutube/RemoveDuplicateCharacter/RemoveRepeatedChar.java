@@ -36,6 +36,7 @@ public class RemoveRepeatedChar {
         System.out.println(strBD);
  */
 
+/* 
         //Aproach-03
         StringBuilder strBD = new StringBuilder();
 
@@ -49,5 +50,31 @@ public class RemoveRepeatedChar {
             }
         }
         System.out.println(strBD);
+ */
+
+
+        //Approach-04
+        char [] charArray = strOrignal.toCharArray();
+        StringBuilder strBD = new StringBuilder();
+
+        for(int i=0;i<charArray.length;i++)
+        { 
+            boolean repeated = false;
+            for(int j=i+1;j<charArray.length;j++)
+            {
+                if(charArray[i]==charArray[j])
+                {
+                    repeated=true;
+                    break;
+                }
+            }
+
+            if(!repeated){
+                strBD.append(charArray[i]);
+            }
+            
+        }
+        System.out.print(strBD);
+
     }
 }
