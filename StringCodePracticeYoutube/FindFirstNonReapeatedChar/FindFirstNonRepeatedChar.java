@@ -39,6 +39,7 @@ public class FindFirstNonRepeatedChar {
         // }
 */ 
 
+/* 
         //Approach-02
         //Without Using Collection
         StringBuilder strBD1 = new StringBuilder();
@@ -74,6 +75,28 @@ public class FindFirstNonRepeatedChar {
                }
             }
         }
+ */
+
+        //Approach-03
+        for(int i=0;i<str.length();i++)
+        {
+            boolean unique=true;
+            for(int j=0;j<str.length();j++)
+            {
+                if(i!=j && str.charAt(i)==str.charAt(j))
+                {
+                    unique = false;
+                }
+            }
+            if(unique)
+            {
+                System.out.println("First Non Repeating Character : "+str.charAt(i));
+                break;
+            }
+        }
+        
+        
+
 
 
     }
