@@ -14,7 +14,14 @@ public class ReplaceCharWithItsOccurance {
         System.out.print("Enter character to replace : ");
         char ch = sc.next().charAt(0);
 
-        /* 
+        //Check if char is present in String
+        if(strOrignal.indexOf(ch)==-1)
+        {
+            System.out.println("Entered Character is Not Present in Input String!!");
+            System.exit(0);
+        }
+
+        /*         
         //Approach-01
         char [] charArray = strOrignal.toCharArray();    
 
@@ -38,16 +45,10 @@ public class ReplaceCharWithItsOccurance {
                 System.out.print(charArray[i]);
             }
         }
-        */
+  */      
 
+/* 
         //Approach-02
-
-        //Check if char is present in String
-        if(strOrignal.indexOf(ch)==-1)
-        {
-            System.out.println("Given Character is Not Present in Input String!!");
-            System.exit(0);
-        }
 
         //Logic to replace char occurance in string
         char[] charArray = strOrignal.toCharArray();
@@ -61,6 +62,18 @@ public class ReplaceCharWithItsOccurance {
             }
         }      
         System.out.println(Arrays.toString(charArray));
-
+ */
+        int count = 1;
+        //Approach-03
+        for(int i=0;i<strOrignal.length();i++)
+        {
+           char crrChar = strOrignal.charAt(i);
+           if(crrChar==ch)
+            {
+               strOrignal = strOrignal.replaceFirst(String.valueOf(crrChar),String.valueOf(count));
+                count++;
+            }
+        }
+        System.out.println(strOrignal);
     }
 }
