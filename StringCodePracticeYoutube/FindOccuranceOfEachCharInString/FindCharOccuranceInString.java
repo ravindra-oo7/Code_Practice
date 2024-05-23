@@ -11,6 +11,7 @@ public class FindCharOccuranceInString {
         System.out.print("Enter String : ");
         String str = sc.next();
 
+ /*        
         //Approach-01
         HashMap<Character,Integer> map = new LinkedHashMap<>();
         
@@ -30,6 +31,27 @@ public class FindCharOccuranceInString {
         {
             System.out.println("Char : "+entry.getKey()+" Occurance : "+entry.getValue());
         }
+ */
+        // //Approach-02 Incomplete
+        // int[] arr = new int[str.length()];
+        // for(int i=0;i<str.length();i++)
+        // {
+        //     int count=1;
+        //     for(int j=i+1;j<str.length();j++)
+        //     {
+        //         if(str.charAt(i)==str.charAt(j))
+        //         {
+        //             count++;
+        //         }
+        //     }
+        //     arr[i]=count;
+        // }
+
+        // for(int i=0;i<str.length();i++)
+        // {
+        //     System.out.println("Char");
+        // }
+
 
     }
 }
