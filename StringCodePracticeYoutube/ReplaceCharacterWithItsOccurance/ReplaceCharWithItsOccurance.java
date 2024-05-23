@@ -1,4 +1,5 @@
 package ReplaceCharacterWithItsOccurance;
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.LinkedHashMap;
 import java.util.Map;
@@ -13,6 +14,7 @@ public class ReplaceCharWithItsOccurance {
         System.out.print("Enter character to replace : ");
         char ch = sc.next().charAt(0);
 
+        /* 
         //Approach-01
         char [] charArray = strOrignal.toCharArray();    
 
@@ -20,7 +22,7 @@ public class ReplaceCharWithItsOccurance {
 
         for(int i=0;i<charArray.length;i++)
         {
-            strMap.put(charArray[i],strMap.getOrDefault(charArray[i],0)+1);
+            strMap.put(charArray[i],strMap.getOrDefault(charArray[i],1));
         }
 
         int counter = 1;
@@ -36,8 +38,29 @@ public class ReplaceCharWithItsOccurance {
                 System.out.print(charArray[i]);
             }
         }
-       
+        */
 
+        //Approach-02
+
+        //Check if char is present in String
+        if(strOrignal.indexOf(ch)==-1)
+        {
+            System.out.println("Given Character is Not Present in Input String!!");
+            System.exit(0);
+        }
+
+        //Logic to replace char occurance in string
+        char[] charArray = strOrignal.toCharArray();
+        int count = 1;
+        for(int i=0;i<charArray.length;i++)
+        {
+            if(charArray[i]==ch)
+            {
+                charArray[i]=String.valueOf(count).charAt(0);
+                count++;
+            }
+        }      
+        System.out.println(Arrays.toString(charArray));
 
     }
 }
