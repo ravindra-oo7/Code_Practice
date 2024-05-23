@@ -11,8 +11,9 @@ public class FindFirstNonRepeatedChar {
         System.out.print("Enter String : ");
         String str = sc.next();
 
-
+/* 
         //Approach-01
+        //Using Collections
         HashMap<Character,Integer> strMap = new LinkedHashMap<>();
 
         for(int i=0;i<str.length();i++)
@@ -36,7 +37,44 @@ public class FindFirstNonRepeatedChar {
         // {
         //     System.out.println("Key : "+key+" Value : "+strMap.get(key));            
         // }
- 
+*/ 
+
+        //Approach-02
+        //Without Using Collection
+        StringBuilder strBD1 = new StringBuilder();
+        StringBuilder strBD2 = new StringBuilder();
+
+
+        for(int i=0;i<str.length();i++)
+        {
+            String str1 = Character.toString(str.charAt(i));
+
+            if(!(strBD1.toString().contains(str1)))
+            {
+                strBD1.append(str1);
+            }
+            else
+            {
+                strBD2.append(str1);
+            }
+        }
+        System.out.println("strBD1 : "+strBD1);
+        System.out.println("strBD2 : "+strBD2);
+        
+        for(int i=0;i<strBD1.length();i++)
+        {
+            for(int j=0;j<strBD2.length();j++)
+            {
+                String str2 = Character.toString(strBD1.charAt(i));
+
+               if(!(strBD2.toString().contains(str2)))
+               {                   
+                   System.out.println("First Non Repeating Character : "+strBD1.charAt(i));
+                   System.exit(0);
+               }
+            }
+        }
+
 
     }
 }
