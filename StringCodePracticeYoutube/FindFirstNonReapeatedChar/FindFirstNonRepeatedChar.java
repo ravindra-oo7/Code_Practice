@@ -37,7 +37,7 @@ public class FindFirstNonRepeatedChar {
         // {
         //     System.out.println("Key : "+key+" Value : "+strMap.get(key));            
         // }
-*/ 
+*/
 
 /* 
         //Approach-02
@@ -77,6 +77,7 @@ public class FindFirstNonRepeatedChar {
         }
  */
 
+/* 
         //Approach-03
         for(int i=0;i<str.length();i++)
         {
@@ -93,10 +94,33 @@ public class FindFirstNonRepeatedChar {
                 System.out.println("First Non Repeating Character : "+str.charAt(i));
                 break;
             }
-        }
-        
-        
+        } 
+*/
 
+        //Approach-04
+        LinkedHashMap<Character,Integer> strMap = new LinkedHashMap<>();
+        for(int i=0;i<str.length();i++)
+        {
+            char ch = str.charAt(i);
+            if(strMap.containsKey(ch))
+            {
+                strMap.put(ch,strMap.get(ch)+1);
+            }
+            else
+            {
+                strMap.put(ch,1);
+            }
+        }
+        System.out.println(strMap);
+
+        for(HashMap.Entry<Character,Integer> entrySet:strMap.entrySet())
+        {
+            if(entrySet.getValue()==1)
+            {
+                System.out.println(entrySet.getKey());
+                System.exit(0);
+            }
+        }
 
 
     }
