@@ -2,6 +2,7 @@ package FindLongestSubString;
 
 import java.util.HashMap;
 import java.util.LinkedHashMap;
+import java.util.Map;
 import java.util.Scanner;
 
 public class FindLongestSubString {
@@ -10,6 +11,8 @@ public class FindLongestSubString {
         System.out.print("Enter String : ");
         String str = sc.next();
 
+/*         
+        //Approach-01
         StringBuilder strArrBD = new StringBuilder();
         StringBuilder strTemp = new StringBuilder();
 
@@ -25,6 +28,7 @@ public class FindLongestSubString {
                 {
                   strArrBD.append(strTemp+" ");
                   strTemp.delete(0, strTemp.length());
+                  //strTemp.setLength(0);
                   break;
                 }
             }
@@ -46,6 +50,36 @@ public class FindLongestSubString {
         }
 
         System.out.println("Longest String : "+strArray[pointer]);
+*/
+
+
+        //Approach-02
+        int longestSubstringLength = 0;
+        String longestSubstring=null;
+
+        Map<Character, Integer> map = new LinkedHashMap<>();
+        char[] arr = str.toCharArray();
+
+        for(int i=0;i<arr.length;i++)
+        {
+            char ch = arr[i];
+            if(!map.containsKey(ch))
+            {
+                map.put(ch,i);
+            }
+            else
+            {
+                i=map.get(ch);
+                map.clear();
+            }
+            if(map.size()>longestSubstringLength)
+            {
+                longestSubstringLength = map.size();
+                longestSubstring = map.keySet().toString();
+            }
+        }
+        System.out.println("The Longest Substring : "+longestSubstring);
+        System.out.println("The Longest Substring Length : "+longestSubstringLength);
 
     }
 }
