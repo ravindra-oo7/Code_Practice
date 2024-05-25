@@ -1,3 +1,5 @@
+package StringCodes.O01FindFirstNonRepeatedChars;
+
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;

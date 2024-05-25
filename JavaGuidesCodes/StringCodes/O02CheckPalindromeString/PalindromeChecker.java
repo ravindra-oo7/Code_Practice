@@ -1,3 +1,4 @@
+package StringCodes.O02CheckPalindromeString;
 import java.util.Scanner;
 
 public class PalindromeChecker {

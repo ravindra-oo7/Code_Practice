@@ -1,3 +1,4 @@
+package StringCodes.O00ExtraExamples;
 import java.util.Scanner;
 import java.util.Stack;
 

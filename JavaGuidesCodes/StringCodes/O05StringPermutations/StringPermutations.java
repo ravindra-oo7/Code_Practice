@@ -1,3 +1,5 @@
+package StringCodes.O05StringPermutations;
+
 import java.util.Scanner;
 
 public class StringPermutations {

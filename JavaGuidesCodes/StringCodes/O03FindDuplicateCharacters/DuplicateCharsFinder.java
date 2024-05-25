@@ -1,3 +1,4 @@
+package StringCodes.O03FindDuplicateCharacters;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
