@@ -11,7 +11,16 @@ public class NumberOfWordsCounter {
 
         String[] strArr = str.split(" ");
 
+        //Approach-01
         System.out.println("Words in Sentence : "+ strArr.length);
         
+        //Approach-02
+        int counter=0;
+        for(int i=0;i<strArr.length;i++)
+        {
+            System.out.println(strArr[i]);
+            counter++;
+        }
+        System.out.println(counter);
     }
 }
