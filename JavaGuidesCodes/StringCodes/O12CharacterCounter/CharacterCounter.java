@@ -10,7 +10,8 @@ public class CharacterCounter {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter String : ");
         String str =  sc.next();
-        
+   
+/*         
         //Approach-01
         //Using Collection
         Map<Character,Integer> charMap = new LinkedHashMap<>();
@@ -22,5 +23,10 @@ public class CharacterCounter {
         }
 
         System.out.println(charMap);
+*/
+
+
+
+
     }
 }
