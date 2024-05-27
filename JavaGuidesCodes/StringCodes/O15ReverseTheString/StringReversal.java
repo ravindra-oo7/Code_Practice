@@ -15,14 +15,18 @@ public class StringReversal {
         System.out.println(strBD.reverse());
  */
 
+/*  
         //Approach-02 Using a Character Array
         char [] charArr = strInput.toCharArray();
         for(int i=charArr.length-1;i>=0;i--)
         {
             System.out.print(charArr[i]);
         }
+*/
+
 
         //Approach-03 Using Recursion
+        //Not Recomended
         System.out.println(reverseString(strInput));
 
     }
