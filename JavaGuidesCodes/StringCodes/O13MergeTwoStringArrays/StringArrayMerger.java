@@ -27,6 +27,8 @@ public class StringArrayMerger {
         String [] finalArr = strBD.toString().split("\\s");
         System.out.println(Arrays.toString(finalArr));
 */
+
+/* 
         //Approach-02
         String [] finalArr = new String[str1.length+str2.length];
 
@@ -42,10 +44,16 @@ public class StringArrayMerger {
             }
         }
         System.out.println(Arrays.toString(finalArr));
+*/
 
+        //Approach-03
+        String [] finalArr = new String[str1.length+str2.length];
 
+        System.arraycopy(str1, 0, finalArr, 0, str1.length);
 
+        System.arraycopy(str2, 0, finalArr, str1.length, str2.length);
 
+        System.out.println(Arrays.toString(finalArr));
 
     }
 }
