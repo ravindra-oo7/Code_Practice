@@ -9,6 +9,7 @@ public class StringArrayMerger {
         String [] str1= {"My","Name","Is"};
         String [] str2 = {"Ravindra","Shende"};
 
+/* 
         //Approach-01
         StringBuilder strBD = new StringBuilder();
   
@@ -25,5 +26,26 @@ public class StringArrayMerger {
 
         String [] finalArr = strBD.toString().split("\\s");
         System.out.println(Arrays.toString(finalArr));
+*/
+        //Approach-02
+        String [] finalArr = new String[str1.length+str2.length];
+
+        for (int i=0;i<finalArr.length;i++) 
+        {
+            if(i<str1.length)
+            {
+                finalArr[i]=str1[i];
+            }
+            else
+            {
+                finalArr[i]=str2[i-str1.length];
+            }
+        }
+        System.out.println(Arrays.toString(finalArr));
+
+
+
+
+
     }
 }
