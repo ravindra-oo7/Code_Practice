@@ -20,8 +20,11 @@ public class RemoveAllWhiteSpaces {
         }
         System.err.println(strBD);
 */
+
     //Approach-o2
-            
+        String finalstr = str.replaceAll("\\s+", "");   
+        System.out.println(finalstr);
+
 
     }
 }
