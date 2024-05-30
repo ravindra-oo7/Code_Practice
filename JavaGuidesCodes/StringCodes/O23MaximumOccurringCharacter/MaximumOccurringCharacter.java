@@ -12,7 +12,7 @@ public class MaximumOccurringCharacter {
         System.out.print("Enter String : ");
         String str = sc.next().trim();
 
-        
+/* 
         //Approach-01 Using HashMap
 
         Map<Character,Integer> charMap = new LinkedHashMap<>();
@@ -36,5 +36,30 @@ public class MaximumOccurringCharacter {
         }
 
         System.err.println("Character [ "+finalCh+" ] has Highest Occurances :"+highestValue);
+ */
+        //Approach-02
+        int highOccurance = 0;
+        char highChar=' ';
+
+        for(int i=0;i<str.length();i++)
+        {
+            int counter = 0;
+            for(int j=0;j<str.length();j++)
+            {
+                if(str.charAt(i)==str.charAt(j))
+                {
+                    counter++;
+                }
+            }
+
+            if(counter>highOccurance)
+            {
+                highOccurance=counter;
+                highChar = str.charAt(i);
+            }
+        }
+
+        System.out.println("Highest Occurring Character is [ "+highChar+" ] Occured : "+highOccurance);
+
     }
 }
