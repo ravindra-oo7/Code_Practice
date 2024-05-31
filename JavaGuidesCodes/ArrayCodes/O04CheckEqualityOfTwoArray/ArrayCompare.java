@@ -20,6 +20,7 @@ public class ArrayCompare {
         }
 */
 
+/* 
     //Approach-02
         boolean isEqual=true;
 
@@ -52,6 +53,9 @@ public class ArrayCompare {
         {
             System.out.println("Not Equals !!");
         }
+*/
+
+
 
     }
 }
