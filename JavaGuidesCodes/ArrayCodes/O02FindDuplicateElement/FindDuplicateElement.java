@@ -23,6 +23,7 @@ public class FindDuplicateElement {
 
         System.out.println(Arrays.toString(arrInt));
 
+/*         
         //Approach-01
         Set<Integer> intSet = new LinkedHashSet<>(); 
 
@@ -38,7 +39,21 @@ public class FindDuplicateElement {
         }
         
         System.out.println("Duplicate Elements : "+intSet);
+*/
 
-        
+
+        //Approach-02
+        System.out.println("Duplicate elements in the array are:");
+        for (int i = 0; i < arrInt.length; i++) 
+        {
+            for (int j = i + 1; j < arrInt.length; j++) 
+            {
+                if (arrInt[i] == arrInt[j]) {
+                    System.out.print(arrInt[i] + " ");
+                }
+            }
+        }
+
+
     }
 }
