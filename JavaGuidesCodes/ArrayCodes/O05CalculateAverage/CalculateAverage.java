@@ -27,8 +27,7 @@ public class CalculateAverage {
         {
             summation+=i;
         }
-        System.out.println("Average : "+(float)summation/(float)arrSize);
-    
+        System.out.println("Average : "+(float)summation/(float)arrSize);     
 
     }
 }
