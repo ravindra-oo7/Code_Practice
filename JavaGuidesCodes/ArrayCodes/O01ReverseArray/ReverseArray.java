@@ -19,6 +19,7 @@ public class ReverseArray {
         }
         System.out.println("Input Array : "+ Arrays.toString(intArr));
 
+/* 
         //Approach-01
         int[] revArr = new int[intArr.length];
         int counter = 0;
@@ -29,5 +30,22 @@ public class ReverseArray {
         }
 
         System.out.println("Reversed Array : "+Arrays.toString(revArr));
+*/  
+  
+        //Approach-02 without using Another Array
+
+        int startIndex = 0;
+        int endIndex = intArr.length-1;
+
+        while(startIndex<endIndex)
+        {
+            int temp = intArr[startIndex];
+            intArr[startIndex] = intArr[endIndex];
+            intArr[endIndex] = temp;
+            startIndex++;
+            endIndex--;
+        }
+        System.out.println(Arrays.toString(intArr));
+
     }
 }
