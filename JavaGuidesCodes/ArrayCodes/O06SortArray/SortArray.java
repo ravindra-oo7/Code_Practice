@@ -26,6 +26,7 @@ public class SortArray {
         System.out.println("Sorted Array : "+Arrays.toString(arrInt));
 */
 
+/* 
     //Approach-02 Decending Sorting
         Integer[] arrInteger = new Integer[arrInt.length];
 
@@ -36,6 +37,30 @@ public class SortArray {
 
         Arrays.sort(arrInteger,Collections.reverseOrder());    
         System.out.println("Sorted Array : "+Arrays.toString(arrInteger));
+*/
+
+    //Approach-03
+        for(int i=0;i<arrInt.length;i++)
+        {
+            //Assume first element is the largest
+            int largestNumIndex = i;
+
+            //Iterate and get largest elements index
+            for(int j=i+1;j<arrInt.length;j++)
+            {
+                if(arrInt[j]>arrInt[largestNumIndex])
+                {
+                    largestNumIndex = j;
+                }
+            }
+
+            //swap the largest element with 1st element of the unsorted part
+            int largerNumb          =   arrInt[largestNumIndex];
+            arrInt[largestNumIndex] =   arrInt[i];
+            arrInt[i]               =   largerNumb;
+        }
+
+        System.out.println("Sorted Array : "+Arrays.toString(arrInt));
 
 
 
