@@ -9,6 +9,7 @@ public class SumOfNaturalNumb {
         System.out.print("Enter Numb : ");
         int numb = sc.nextInt();
 
+/*         
         //Approach-01
         int sum = 0;
         for(int i=1;i<=numb;i++)
@@ -17,5 +18,9 @@ public class SumOfNaturalNumb {
         }
 
         System.out.println("Sum of "+numb+" Natural Number : "+sum);
+*/
+        //Approach-02 Mathematical Approach
+        int sum =(numb*(numb+1))/2;
+        System.out.println("Sum of "+ numb +" Natural Number : "+sum);
     }
 }
