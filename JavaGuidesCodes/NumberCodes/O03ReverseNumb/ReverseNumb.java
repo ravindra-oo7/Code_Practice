@@ -9,6 +9,7 @@ public class ReverseNumb {
         System.out.print("Enter Numb : ");
         int numb = sc.nextInt();
 
+/*         
         //Approach-01
         int reverseNumb = 0;
         while(numb!=0)
@@ -18,5 +19,12 @@ public class ReverseNumb {
             numb = numb/10;
         }    
         System.out.println("Reverse Number : "+reverseNumb );
+*/
+        //Approach-02
+        StringBuilder str = new StringBuilder(String.valueOf(numb));
+        str.reverse();
+        Integer revrseInt = Integer.parseInt(str.toString());
+        System.out.println("Reverse Number : "+revrseInt);
+
     }
 }
