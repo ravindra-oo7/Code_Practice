@@ -1,4 +1,4 @@
-package NumberCodes.Factorial;
+package NumberCodes.O01FindFactorial;
 
 import java.util.Scanner;
 
