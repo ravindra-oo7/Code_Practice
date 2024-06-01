@@ -39,6 +39,7 @@ public class SortArray {
         System.out.println("Sorted Array : "+Arrays.toString(arrInteger));
 */
 
+/* 
     //Approach-03
         for(int i=0;i<arrInt.length;i++)
         {
@@ -61,8 +62,17 @@ public class SortArray {
         }
 
         System.out.println("Sorted Array : "+Arrays.toString(arrInt));
+ */
 
+    //Approach-04
+        int frontPtr = 0;
+        int backPtr = arrInt.length-1;
 
+        for(int i=0;i<arrInt.length;i++)
+        {
+            
+        }
+        
 
     }
 }
