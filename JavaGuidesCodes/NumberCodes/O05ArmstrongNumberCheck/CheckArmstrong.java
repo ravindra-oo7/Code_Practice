@@ -30,6 +30,7 @@ public class CheckArmstrong {
         }
 */      
 
+        //Approach-02
         int orignalNumb = numb;
         int sum = 0;
         int length = String.valueOf(numb).length();
@@ -49,5 +50,7 @@ public class CheckArmstrong {
         {
             System.out.println(orignalNumb+" is Not Armstrong Number !!!");
         }
+
+        
     }
 }
