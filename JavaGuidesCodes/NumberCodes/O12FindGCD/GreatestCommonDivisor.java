@@ -10,7 +10,7 @@ public class GreatestCommonDivisor {
         int numb1 = sc.nextInt();
         System.out.print("Enter Second Number : ");
         int numb2 = sc.nextInt();
-
+/* 
         //Approach-01
         int min = Math.min(numb1, numb2);
         int highestDivisor=0;
@@ -18,11 +18,19 @@ public class GreatestCommonDivisor {
         {
             if(numb1%i==0 && numb2%i==0)
             {
-                highestDivisor =i;
+                highestDivisor =i;s
             }
         }
         System.out.println("The Highest Common Divisor of " + numb1 + " and " + numb2 + " is: " + highestDivisor);
+*/
 
-        
+        //Approch-02
+        while(numb2!=0)
+        {
+            int temp = numb2;
+            numb2 = numb1%numb2;
+            numb1=temp;
+        }
+        System.out.println("HCF : " + numb1);
     }
 }
