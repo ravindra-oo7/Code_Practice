@@ -28,8 +28,26 @@ public class CheckArmstrong {
         {
             System.out.println(numb+" is not Armstrong number !!");
         }
-*/
-        int sum = 0;
+*/      
 
+        int orignalNumb = numb;
+        int sum = 0;
+        int length = String.valueOf(numb).length();
+
+        while(numb>0)
+        {
+            int digit = numb%10;
+            sum += Math.pow(digit,length);
+            numb /=10;
+        }
+
+        if(orignalNumb==sum)
+        {
+            System.out.println(orignalNumb+" is Armstrong Number.");
+        }
+        else
+        {
+            System.out.println(orignalNumb+" is Not Armstrong Number !!!");
+        }
     }
 }
