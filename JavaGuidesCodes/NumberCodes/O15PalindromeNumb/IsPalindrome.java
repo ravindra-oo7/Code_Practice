@@ -9,7 +9,8 @@ public class IsPalindrome {
         System.out.print("Enter  Number : ");
         int numb = sc.nextInt();
 
-        //Approch-01
+/*         
+        //Approch-01 using string and StringBuilder
         StringBuilder strBD = new StringBuilder();
         String strNumb = Integer.toString(numb);
 
@@ -26,6 +27,25 @@ public class IsPalindrome {
         else
         {
             System.out.println(numb+ " : Not Palindrome.");
+        }
+*/
+        //Approach-02 
+        int revrsedNumb = 0;
+        int inputNumb = numb;
+        while (inputNumb!=0)
+        {
+            int temp = inputNumb%10;
+            revrsedNumb = (revrsedNumb*10)+temp;
+            inputNumb/=10;
+        }
+
+        if(numb==revrsedNumb)
+        {
+            System.out.println(numb+" : Palindrome");
+        }
+        else
+        {
+            System.out.println(numb +" : Not Palindrome");
         }
 
     }
