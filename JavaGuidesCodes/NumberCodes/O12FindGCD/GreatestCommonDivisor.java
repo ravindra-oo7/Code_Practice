@@ -18,7 +18,7 @@ public class GreatestCommonDivisor {
         {
             if(numb1%i==0 && numb2%i==0)
             {
-                highestDivisor =i;s
+                highestDivisor =i;
             }
         }
         System.out.println("The Highest Common Divisor of " + numb1 + " and " + numb2 + " is: " + highestDivisor);
