@@ -21,6 +21,7 @@ public class SumOfAllDigits {
         } 
         System.out.println("Sum of All Digits : "+sum);
 */
+
         //Appraoch-02
         String numbStr = Integer.toString(numb);
         int sum = numbStr.chars()
