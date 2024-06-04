@@ -10,7 +10,7 @@ public class SumOfAllDigits {
         System.out.print("Enter Number : ");
         Integer numb = sc.nextInt();
 
-        
+/*         
         //Approach-01
         int sum = 0;
         while (numb!=0) 
@@ -19,6 +19,14 @@ public class SumOfAllDigits {
             sum+=temp;
             numb /=10;
         } 
+        System.out.println("Sum of All Digits : "+sum);
+*/
+        //Appraoch-02
+        String numbStr = Integer.toString(numb);
+        int sum = numbStr.chars()
+                        .map(Character::getNumericValue)
+                        .sum();
+
         System.out.println("Sum of All Digits : "+sum);
 
 
