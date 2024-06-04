@@ -4,6 +4,7 @@ import java.util.HashMap;
 import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.Scanner;
+import java.util.stream.Collectors;
 
 public class CharacterFrequency {
     public static void main(String[] args) 
@@ -11,7 +12,7 @@ public class CharacterFrequency {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter String : ");
         String str = sc.next().toLowerCase();
-
+/* 
         //Approach-01
         Map<Character,Integer> charMap = new LinkedHashMap<>();
 
@@ -25,6 +26,15 @@ public class CharacterFrequency {
         {
             System.out.println("Character : "+entry.getKey()+"| Occurances : "+entry.getValue());
         }
+ */
+
+        //Approach-02 using streamAPI
+        str.chars()
+            .mapToObj(c->(char)c)
+            .collect(Collectors.groupingBy(c->c,Collectors.counting()))
+            .forEach((character,frequency)->System.out.println(character+": "+frequency));
+
+
 
     }
 }
