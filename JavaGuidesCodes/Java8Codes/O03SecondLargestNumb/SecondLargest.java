@@ -1,8 +1,10 @@
 package Java8Codes.O03SecondLargestNumb;
 
 import java.util.Arrays;
+import java.util.Comparator;
 import java.util.LinkedHashSet;
 import java.util.List;
+import java.util.Optional;
 import java.util.Set;
 
 public class SecondLargest {
@@ -10,6 +12,7 @@ public class SecondLargest {
     {
         List<Integer> numbers = Arrays.asList(1, 3, 4, 5, 6, 6, 7, 2); 
 
+/*         
         //Approach-01
         int highest = 0;
         int secondHigh =0;
@@ -27,9 +30,20 @@ public class SecondLargest {
                 secondHigh = integer;
             }
         }
-        
+
         System.out.println("Highest Element : "+highest);
         System.out.println("Second Highest Element : "+secondHigh);
+*/
+
+        //Approach-02
+        Optional<Integer> secondLargest = numbers.stream()
+                                                    .distinct()
+                                                    .sorted(Comparator.reverseOrder())
+                                                    .skip(1)
+                                                    .findFirst();
+        secondLargest.ifPresent(numb->System.out.println("Second Largest Number : "+numb));
+
+                                                
 
     }
 }
