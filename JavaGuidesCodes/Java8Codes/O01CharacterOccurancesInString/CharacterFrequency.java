@@ -34,7 +34,5 @@ public class CharacterFrequency {
             .collect(Collectors.groupingBy(c->c,Collectors.counting()))
             .forEach((character,frequency)->System.out.println(character+": "+frequency));
 
-
-
     }
 }
