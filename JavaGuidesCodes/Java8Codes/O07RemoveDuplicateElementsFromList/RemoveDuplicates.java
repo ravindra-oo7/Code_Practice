@@ -4,6 +4,7 @@ import java.util.Arrays;
 import java.util.LinkedHashSet;
 import java.util.List;
 import java.util.Set;
+import java.util.stream.Collectors;
 
 public class RemoveDuplicates {
     public static void main(String[] args) 
@@ -12,7 +13,7 @@ public class RemoveDuplicates {
         System.out.print("List : ");
         numbersWithDuplicates.stream().forEach(n->System.out.print(n+", "));
       
-      
+/*       
         //Approach-01
         Set<Integer> intSet = new LinkedHashSet<>();
 
@@ -24,6 +25,14 @@ public class RemoveDuplicates {
         System.out.print("After Removing Duplicates : ");
         intSet.stream()
                 .forEach(n->System.out.print(n+", "));
+*/  
+        //Approach-02
+        List<Integer> numbWithoutDupli = numbersWithDuplicates
+                                            .stream()
+                                            .distinct()
+                                            .collect(Collectors.toList());     
+
+        System.out.println("\nNew List : "+numbWithoutDupli);
 
     }
 }
