@@ -34,5 +34,6 @@ public class ConvertListToMap {
         System.out.println("List to Map : ");
         strMap.forEach((key,value)->System.out.println("Key : "+key+ " | Value : "+value));
 
+        
     }
 }
