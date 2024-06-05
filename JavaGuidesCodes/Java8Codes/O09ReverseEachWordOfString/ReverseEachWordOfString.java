@@ -1,6 +1,9 @@
 package Java8Codes.O09ReverseEachWordOfString;
 
+import java.util.Arrays;
 import java.util.Scanner;
+import java.util.stream.Collector;
+import java.util.stream.Collectors;
 
 public class ReverseEachWordOfString {
     public static void main(String[] args) 
@@ -9,6 +12,7 @@ public class ReverseEachWordOfString {
         System.out.print("Enter String : ");
         String str = sc.nextLine();
 
+/*         
         //Approach-01
         String[] strArr = str.split("\\s+");
 
@@ -23,7 +27,14 @@ public class ReverseEachWordOfString {
 
             System.out.print(" "); 
         }
+*/
 
+        //Approach-02
+        String result = Arrays.stream(str.split("\\s+"))
+                                .map(word-> new StringBuilder(word).reverse())
+                                .collect(Collectors.joining(" "));
+
+        System.out.println("Reversed Words : "+ result);
 
     }
 }
