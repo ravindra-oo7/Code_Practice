@@ -15,10 +15,10 @@ public class FirstReapetedChar {
          System.out.print("Enter String : ");
          String str = sc.next().toLowerCase();
  
-/*          
+         
         //Approach-01
         Set<Character> charSet = new LinkedHashSet<>();
-        
+        boolean isRepeated = false;
         for(int i=0;i<str.length();i++)
         {
             char ch=str.charAt(i);
@@ -26,12 +26,18 @@ public class FirstReapetedChar {
             if(!charSet.add(ch))
             {
                 System.out.println("First Repeated character : "+ch);
+                isRepeated =true;
                 break;
             }
             
         }
-*/
+        if(!isRepeated)
+        {
+            System.out.println("No repeated chracters Found!!!");
+        }
 
+
+/* 
         //Approach-02
         Character result = str.chars()
                                 .mapToObj(c->(char)c)
@@ -51,7 +57,7 @@ public class FirstReapetedChar {
         {
             System.out.println("No repeated chracters Found!!!");
         }
-
+*/
 
     }
 }
