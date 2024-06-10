@@ -38,7 +38,7 @@ public class HCF {
         System.out.println("HCF : "+hcf);
 */
 
-
+/* 
         //Approch-03 Euclidean Algorithm
         while (numb1!=numb2) 
         {
@@ -52,7 +52,24 @@ public class HCF {
             }
         } 
         System.out.println("HCF : "+numb1);  
+*/
 
+        //Approch-04
+        System.out.println("HCF : "+hcfFunc(numb1, numb2));  
 
+        
     }
+    
+    static int hcfFunc(int a,int b)
+    {
+        if(b==0)
+        {
+             return a;
+        }
+        else
+        {
+            return hcfFunc(b, a%b);
+        }
+
+     }
 }
