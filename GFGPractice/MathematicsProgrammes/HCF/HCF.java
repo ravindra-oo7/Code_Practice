@@ -23,6 +23,8 @@ public class HCF {
         }
         System.err.println("HCF : "+hcf);
 */
+
+/* 
         //Approach-02
         int hcf = Math.min(numb1, numb2);
         while (hcf>0) 
@@ -34,6 +36,23 @@ public class HCF {
             hcf--;
         }
         System.out.println("HCF : "+hcf);
+*/
+
+
+        //Approch-03 Euclidean Algorithm
+        while (numb1!=numb2) 
+        {
+            if(numb1>numb2)
+            {
+                numb1=numb1-numb2;
+            }
+            else
+            {
+                numb2=numb2-numb1;
+            }
+        } 
+        System.out.println("HCF : "+numb1);  
+
 
     }
 }
