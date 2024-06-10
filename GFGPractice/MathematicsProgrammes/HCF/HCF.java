@@ -10,7 +10,7 @@ public class HCF {
         System.out.print("Enter Second Number : ");
         int numb2 = sc.nextInt();   
 
-
+/* 
         //Approach-01
         int lowestNumb = Math.min(numb1, numb2);
         int hcf = 1;
@@ -22,7 +22,18 @@ public class HCF {
             }
         }
         System.err.println("HCF : "+hcf);
+*/
+        //Approach-02
+        int hcf = Math.min(numb1, numb2);
+        while (hcf>0) 
+        {
+            if(numb1%hcf == 0 && numb2%hcf == 0)
+            {
+                break;
+            }
+            hcf--;
+        }
+        System.out.println("HCF : "+hcf);
 
-        
     }
 }
