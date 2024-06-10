@@ -8,8 +8,9 @@ public class FactorialsTrailingZerosCounter {
     {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter Number : ");
-        long numb = sc.nextInt();
+        int numb = sc.nextInt();
 
+/* 
         //Approach-01
         //Calculate factorial using BigInteger
         BigInteger fact =  BigInteger.ONE;
@@ -30,6 +31,19 @@ public class FactorialsTrailingZerosCounter {
         }
 
         System.out.println("Trailing Zeros : "+counter);
+*/
 
+        //Approach-02
+        System.err.println("Trailing Zeros : "+countTrailingZeros(numb));
+
+
+    }
+    
+    static int countTrailingZeros(int n)
+    {
+        int res = 0;
+        for(int i=5;i<=n;i=i*5)
+            res = res+(n/i);
+        return res;
     }
 }
