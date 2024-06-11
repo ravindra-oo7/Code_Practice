@@ -21,6 +21,7 @@ public class SieveOfEratorthenes {
         }
 */
 
+/* 
         // Approch-02
         boolean[] arr = new boolean[numb+1] ;
         Arrays.fill(arr,true);
@@ -43,8 +44,53 @@ public class SieveOfEratorthenes {
                 System.out.print(i+", ");
             }
         }
+*/
+/* 
+        // Approach-03 Optimized02
+
+        boolean[] arr = new boolean[numb+1] ;
+        Arrays.fill(arr,true);
+
+        for(int i=2;i*i<=numb;i++)
+        {
+            if(arr[i])
+            {
+                for(int j=i*i;j<=numb;j=j+i)
+                {
+                    arr[j]=false;
+                }
+            }  
+        }
+
+        for(int i=2;i<=numb;i++)
+        {
+            if(arr[i])
+            {
+                System.out.print(i+", ");
+            }
+        }
+*/
+
+        // Approach-04 Optimized-03
+        boolean[] arr = new boolean[numb+1] ;
+        Arrays.fill(arr,true);
+
+        for(int i=2;i<=numb;i++)
+        {
+            if(arr[i])
+            {
+                System.out.print(i+", ");
+                 
+                for(int j=i*i;j<=numb;j=j+i)
+                {
+                    arr[j]=false;
+                }
+            }
+        }
+
 
     }
+
     static boolean isPrime(int n)
     {
         boolean status =true;
