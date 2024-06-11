@@ -31,6 +31,8 @@ public class LCMofTwoNumb {
         }
         System.out.println("LCM : "+lcm);
 */
+
+/* 
         //Approach-02
         int res = Math.max(numb1, numb2);
         int lcm =res ;
@@ -45,6 +47,24 @@ public class LCMofTwoNumb {
             counter++;
         }
         System.out.println("LCM : "+lcm);
+*/
+        //Approach-03
+        System.out.println("LCM : "+LCM(numb1, numb2));
 
+    
     }
+    static int HCF(int a,int b)
+    {
+        if(b==0)
+        {
+            return a;
+        }
+        return HCF(b,a%b);
+    }
+    static int LCM(int a,int b)
+    {
+        return (a*b)/HCF(a,b);//formula LCM=(a*b)/HCF
+    }
+
+
 }
