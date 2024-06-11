@@ -9,7 +9,7 @@ public class FindAllFactors {
         System.out.print("Enter Number : ");
         int numb = sc.nextInt();
 
-
+/* 
         // Approach-01
         System.out.print("All Factors : ");
         for(int i=1;i<=numb;i++)
@@ -19,5 +19,23 @@ public class FindAllFactors {
                 System.out.print(i+", ");
             }
         }
+
+*/        
+        
+
+        // Approach-02 Optimised
+        System.out.print("All Factors : ");
+        for(int i=1;i*i<=numb;i++)
+        {
+            if(numb%i==0)
+            {
+                System.out.print(i+", ");
+                if(i != numb/i)
+                {
+                    System.out.print(numb/i+", ");
+                }
+            }
+        }
+        
     }
 }
