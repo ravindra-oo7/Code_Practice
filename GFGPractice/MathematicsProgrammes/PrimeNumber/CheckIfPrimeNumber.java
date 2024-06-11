@@ -9,6 +9,8 @@ public class CheckIfPrimeNumber {
         System.out.print("Enter Number : ");
         int numb = sc.nextInt();
 
+/* 
+        //Approach-o1
         if (numb<2) 
         {
             System.out.println(numb+" : Not Prime \nPrime starts from 2 !!");
@@ -37,7 +39,34 @@ public class CheckIfPrimeNumber {
                 System.out.println(numb + ": Not a Prime Number");
             }
         }    
+*/
 
+        //Approach-02
+        boolean isPrime =true;
+        if(numb<2)
+        {
+            isPrime=false;
+            System.out.println("Prime Starts from 2!!");
+        }
+        else
+        {
+            for(int i=2;i*i<=numb;i++)
+            {
+                if(numb%i==0)
+                {
+                    isPrime=false;
+                    break;
+                }
+            }
+        }
+        if(isPrime)
+        {
+            System.out.println(numb +" : Prime");
+        }
+        else
+        {
+            System.out.println(numb +" : Not Prime");
+        }
 
     }
 }
