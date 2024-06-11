@@ -10,6 +10,7 @@ public class LCMofTwoNumb {
         System.out.print("Enter Second Number : ");
         int numb2 = sc.nextInt();
 
+/*         
         //Approch-01
         int max = Math.max(numb1, numb2);
         int min = Math.min(numb1, numb2);
@@ -20,7 +21,6 @@ public class LCMofTwoNumb {
         {
             if(lcm%min==0)
             {
-                
                 break;
             }
             else
@@ -30,7 +30,21 @@ public class LCMofTwoNumb {
             }
         }
         System.out.println("LCM : "+lcm);
-
+*/
+        //Approach-02
+        int res = Math.max(numb1, numb2);
+        int lcm =res ;
+        int counter=1;
+        while (true) 
+        {
+            if( lcm%numb1==0 && lcm%numb2==0 )
+            {
+                break;
+            }
+            lcm=res*counter;
+            counter++;
+        }
+        System.out.println("LCM : "+lcm);
 
     }
 }
