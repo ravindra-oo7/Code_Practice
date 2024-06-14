@@ -1,9 +1,9 @@
 package BitMagic.BitwiseOperators;
-
+ 
 public class LeftShiftRightShiftOpt {
     public static void main(String[] args) 
     {
-        int x=5;
+        int x=-5;
         System.out.println("After Left Shift by 1 : "+(x<<1));
         System.out.println("After Left Shift by 2 : "+(x<<2));
 
