@@ -76,7 +76,17 @@ public class RemoveRepeatedChar {
         System.out.print(strBD);
  */
 
-
+        //Approach-05
+        StringBuilder strBD = new StringBuilder();
+        for(int i=0;i<strOrignal.length();i++)
+        {
+            if(!strBD.toString().contains(Character.toString(strOrignal.charAt(i))))
+            {
+                strBD.append(strOrignal.charAt(i));
+            }
+            
+        }
+        System.out.println("Final String : "+strBD);
  
     }
 }

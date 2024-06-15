@@ -63,8 +63,10 @@ public class ReplaceCharWithItsOccurance {
         }      
         System.out.println(Arrays.toString(charArray));
  */
-        int count = 1;
+
+/*  
         //Approach-03
+        int count = 1;
         for(int i=0;i<strOrignal.length();i++)
         {
            char crrChar = strOrignal.charAt(i);
@@ -75,5 +77,30 @@ public class ReplaceCharWithItsOccurance {
             }
         }
         System.out.println(strOrignal);
+*/
+        // Approach-04
+        int counter = 0;
+        for(int i=0;i<strOrignal.length();i++)
+        {
+            char currCh = strOrignal.charAt(i);
+            if(currCh==ch)
+            {
+                counter++;
+            }
+        } 
+        System.out.println(ch+" : "+counter);
+
+        for(int i=strOrignal.length()-1;i>=0;i--)
+        {
+            char currCh = strOrignal.charAt(i);
+            if(currCh==ch)
+            {
+               // strOrignal.replaceFirst(Character.toString(currCh), Integer.toString(counter));
+               strOrignal = strOrignal.substring(0, i) + counter + strOrignal.substring(i + 1);
+               counter--;
+            }
+        }
+        System.out.println("Final String : "+strOrignal);
+
     }
 }

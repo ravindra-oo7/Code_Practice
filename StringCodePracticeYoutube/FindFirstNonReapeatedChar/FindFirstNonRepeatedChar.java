@@ -102,14 +102,16 @@ public class FindFirstNonRepeatedChar {
         for(int i=0;i<str.length();i++)
         {
             char ch = str.charAt(i);
-            if(strMap.containsKey(ch))
-            {
-                strMap.put(ch,strMap.get(ch)+1);
-            }
-            else
-            {
-                strMap.put(ch,1);
-            }
+            // if(strMap.containsKey(ch))
+            // {
+            //     strMap.put(ch,strMap.get(ch)+1);
+            // }
+            // else
+            // {
+            //     strMap.put(ch,1);
+            // }
+
+            strMap.put(ch,strMap.getOrDefault(ch, 0)+1);
         }
         System.out.println(strMap);
 
