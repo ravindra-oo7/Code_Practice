@@ -9,7 +9,8 @@ public class CountSetBit
         Scanner sc = new Scanner(System.in);       
         System.out.print("Enter Number : ");
         int numb = sc.nextInt();
-        
+
+/*         
         // Approach-01
         int counter=0;
         while(numb>0)        
@@ -23,5 +24,19 @@ public class CountSetBit
         }
         
         System.out.println("Count : "+counter);
+*/
+
+        // Approach-02
+        int counter = 0;
+        while(numb>0)
+        {
+            if( numb%2 !=0)
+            {
+                counter++;
+            }
+            numb = numb/2;
+        }
+        System.out.println("Count : "+counter);
+
     }
 }
