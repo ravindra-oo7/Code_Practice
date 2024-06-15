@@ -9,6 +9,7 @@ public class IsPowerOfTwo {
         System.out.print("Enter Number : ");
         int numb = sc.nextInt();
 
+/*         
         //Approach-01
         int counter = 2;
         while (counter<numb) 
@@ -23,6 +24,26 @@ public class IsPowerOfTwo {
         {
             System.out.println("No");
         }
+*/
+
+        //Approch-
+        // boolean flag =true;
+        int comparer=1;
+        while(comparer<numb)
+        {
+            comparer = comparer<<1;
+            if(comparer == numb )
+            {
+                System.out.println("Yes");
+                System.exit(0);
+            }
+        }
+        System.out.println("No");
+
+
+
+
+
 
     }
 }
