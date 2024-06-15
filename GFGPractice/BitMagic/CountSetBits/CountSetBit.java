@@ -40,6 +40,7 @@ public class CountSetBit
         System.out.println("Count : "+counter);
 */
 
+/* 
         // Approch-03
         int counter = 0;
         while(numb>0)
@@ -51,8 +52,16 @@ public class CountSetBit
             numb = numb>>1;
         }
         System.out.println("Count : "+counter);
+*/
 
-
+        // Approach-04
+        int counter = 0;
+        while(numb>0)
+        {
+            numb=(numb&(numb-1));
+            counter++;
+        }
+        System.out.println("Count : "+counter);
 
     }
 }
