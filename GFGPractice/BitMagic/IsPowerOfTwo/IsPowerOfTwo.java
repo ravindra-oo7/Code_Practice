@@ -26,7 +26,8 @@ public class IsPowerOfTwo {
         }
 */
 
-        //Approch-
+/* 
+        //Approch-02
         // boolean flag =true;
         int comparer=1;
         while(comparer<numb)
@@ -39,11 +40,69 @@ public class IsPowerOfTwo {
             }
         }
         System.out.println("No");
+*/
+/* 
+        // Approch-03
+        boolean flag = true;
+        if(numb<2)
+        {
+            System.out.println("No");
+            System.exit(0);
+        }
+        while(numb!=1)
+        {
+           if (numb%2!=0)
+           {
+                flag=false;
+                break;
+           }
+           numb/=2;
+        }
+        if(flag)
+        {
+            System.out.println("Yes");
+        }
+        else
+        {
+            System.out.println("No");
+        }
+*/
 
+/* 
+        // Approach-04
+        boolean flag=false;
 
+        if((numb&(numb-1))==0)
+            flag=true;
+        if(numb<2)
+            flag=false;
 
+        if(flag)
+        {
+             System.out.println("Yes");
+        }
+        else
+        {
+            System.out.println("No");
+        }
+*/
 
+        // Approach-05
+        boolean flag=false;
 
+        if((numb>1)&&((numb&(numb-1))==0))
+        {
+            flag =true;
+        }
+    
+        if(flag)
+        {
+             System.out.println("Yes");
+        }
+        else
+        {
+            System.out.println("No");
+        }
 
     }
 }
