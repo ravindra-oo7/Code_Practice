@@ -53,7 +53,7 @@ public class CountSetBit
         }
         System.out.println("Count : "+counter);
 */
-
+/* 
         // Approach-04
         int counter = 0;
         while(numb>0)
@@ -62,6 +62,26 @@ public class CountSetBit
             counter++;
         }
         System.out.println("Count : "+counter);
+*/
+        // Approach-05
+        int[] table = new int[256];
+        table[0]=0;
+        for(int i=0;i<256;i++)
+        {
+            table[i]=(i&1)+table[i/2];
+        }
 
+        int res = table[numb & 0xff];
+        numb = numb>>8;
+
+        res = res + table[numb & 0xff];
+        numb = numb>>8;
+
+        res = res + table[numb & 0xff];
+        numb = numb>>8;
+
+        res = res + table[numb & 0xff];
+
+         System.out.println(res);
     }
 }
