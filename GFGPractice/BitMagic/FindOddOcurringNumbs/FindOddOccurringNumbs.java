@@ -8,10 +8,12 @@ import java.util.Set;
 public class FindOddOccurringNumbs {
     public static void main(String[] args) 
     {
+
         Scanner sc = new Scanner(System.in);       
         System.out.print("Enter Array Length : ");
         int numb = sc.nextInt();
 
+        //Taking Input 
         int[] intArr = new int[numb];
         System.out.println("Enter elements in Array : ");
         for(int i=0;i<intArr.length;i++)
@@ -21,7 +23,7 @@ public class FindOddOccurringNumbs {
         }
         System.err.println("Input Array : "+Arrays.toString(intArr));
 
-
+/*  
         //Approach-01
         System.out.print("Odd Occurring Numbers : ");
         Set<Integer> intSet = new LinkedHashSet<>();
@@ -43,6 +45,21 @@ public class FindOddOccurringNumbs {
                 System.out.print(intArr[i]+", ");
             }
         }
+ */
+
+        // Approach-02 
+        // use only if single Oddly repeating number present
+        
+        int count=0;
+        for(int i=0;i<intArr.length;i++)
+        {
+            count = count^intArr[i];
+        }
+        System.out.println("Op : "+count);
+
+
+
+
 
 
 
