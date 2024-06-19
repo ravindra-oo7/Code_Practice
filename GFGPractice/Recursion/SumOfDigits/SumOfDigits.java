@@ -9,7 +9,7 @@ public class SumOfDigits {
         System.out.print("Enter Number : ");
         int numb = sc.nextInt();
 
-
+/* 
         //Approach-01
         int sum = 0;
         while(numb>0)
@@ -19,5 +19,25 @@ public class SumOfDigits {
             numb/=10;
         }
         System.out.println("Sum : "+sum);
+*/   
+
+        // Approach-02
+        System.out.println("Sum : "+sumOfDigits(numb));
+
+
     }
+
+    private static int sumOfDigits(int numb) 
+    {
+       if(numb==0)
+       {
+            return 0;
+       }
+       return (numb%10)+sumOfDigits(numb/10);
+    
+    }
+
+
+
+
 }
