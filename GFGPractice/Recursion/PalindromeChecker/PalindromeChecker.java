@@ -27,7 +27,7 @@ public class PalindromeChecker {
             System.out.println("Not Palindrome");
         }        
 */
-
+/* 
         //Approach-02
         int startPtr = 0;
         int endPtr = str.length()-1;
@@ -51,8 +51,29 @@ public class PalindromeChecker {
         {
             System.out.println("Not Palindrome !!");
         }
+*/
 
+        // Approch-03 recursive
+        int end = str.length()-1;
+        if(isPalindrome(str,0,end))
+        {
+            System.out.println(str+" : Palindrome");
+        }
+        else
+        {
+            System.out.println(str+" : Not Palindrome");
 
+        }
 
     }
+
+    public static boolean isPalindrome(String str,int start, int end)
+    {
+        if(start>=end)
+            return true;
+        
+        return (str.charAt(start)==str.charAt(end))&& isPalindrome(str, start+1, end-1);
+    }
+
+
 }
