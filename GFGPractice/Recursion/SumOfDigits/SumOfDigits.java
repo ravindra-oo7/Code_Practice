@@ -29,10 +29,18 @@ public class SumOfDigits {
 
     private static int sumOfDigits(int numb) 
     {
-       if(numb==0)
-       {
-            return 0;
-       }
+
+    //    if(numb==0)
+    //    {
+    //         return 0;
+    //    }
+
+        if(numb<=9)
+        {
+            return numb;
+        }
+
+
        return (numb%10)+sumOfDigits(numb/10);
     
     }
