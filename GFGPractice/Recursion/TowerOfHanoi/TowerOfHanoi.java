@@ -9,12 +9,12 @@ public class TowerOfHanoi {
         System.out.println("Enter Number of discs : ");
         int n = sc.nextInt();
 
-        towOfHanoi(n,'A','B','C');
+        towOfHanoi(n,'A','B','C');//B=Auxillary
     }
 
     private static void towOfHanoi(int n, char A, char B, char C) 
     {
-        if(n==1)
+        if(n==1)  
         {
             System.out.println("Move 1 from "+A+" to "+C);
             return;
