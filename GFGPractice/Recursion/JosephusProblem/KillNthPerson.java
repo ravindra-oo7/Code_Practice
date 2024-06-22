@@ -22,7 +22,20 @@ public class KillNthPerson {
         }
  */
 
+        // Approach-02
+        System.out.println("Last Man Standing : "+jos(person,k));
 
+
+    }
+
+    private static int jos(int person, int k) 
+    {
+        if(person==1)
+        {
+            return 0;
+        }
+        else
+            return (jos(person-1,k)+k) % person;
 
     }
 }
