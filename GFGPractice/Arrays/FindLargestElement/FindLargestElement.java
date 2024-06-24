@@ -8,6 +8,7 @@ public class FindLargestElement {
         Scanner sc = new Scanner(System.in);
         int[] intArr = {10,5,20,8};
 
+        // Approach-01
         int largest = 0;
         int pointer=0;
         for(int i=0;i<intArr.length;i++)
@@ -19,7 +20,6 @@ public class FindLargestElement {
             }
         }
         
-        System.out.print("Largest Elements Index : "+ pointer);
-
+        System.out.println("Largest Elements Index : "+ pointer);
     }
 }
