@@ -1,5 +1,6 @@
 package Arrays.EnterElementInArrayAtAnyPosition;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class EnterElementAtPosition {
@@ -17,15 +18,21 @@ public class EnterElementAtPosition {
             arr[2]=32;
         
         // Approach-01
+        System.out.println("Array Before Insert : "+ Arrays.toString(arr));
         insert(arr,ele,pos);        
-    }
-
+        System.out.println("Array After Insert : "+ Arrays.toString(arr));
+    }   
+    
     private static void insert(int[] arr, int ele, int pos) 
     {
         int arrSize = arr.length;
         if(arr[arrSize-1]==0)
         {
-             
+             for(int i=pos;i<arr.length-2;i++)
+             {
+                arr[i+1]=arr[i];
+             }
+             arr[pos]=ele;
         }
     }
 }

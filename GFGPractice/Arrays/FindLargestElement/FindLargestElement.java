@@ -19,7 +19,7 @@ public class FindLargestElement {
                 pointer = i;
             }
         }
-        
+        System.out.println("Largest Element : "+largest);
         System.out.println("Largest Elements Index : "+ pointer);
     }
 }
