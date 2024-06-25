@@ -7,18 +7,20 @@ public class EnterElementAtPosition {
     public static void main(String[] args) 
     {
         Scanner sc = new Scanner(System.in);
-        System.out.print("Enter Element to Enter : ");
-        int ele = sc.nextInt();
-        System.out.print("Enter postion : ");
-        int pos = sc.nextInt();
 
         int[] arr = new int[5];
             arr[0]=12;
             arr[1]=2;
             arr[2]=32;
+        System.out.println("Array Before Insert : "+ Arrays.toString(arr));
+        
+        System.out.print("Enter Element to Enter : ");
+        int ele = sc.nextInt();
+        System.out.print("Enter postion : ");
+        int pos = sc.nextInt();
+
         
         // Approach-01
-        System.out.println("Array Before Insert : "+ Arrays.toString(arr));
         insert(arr,ele,pos);        
         System.out.println("Array After Insert : "+ Arrays.toString(arr));
     }   
