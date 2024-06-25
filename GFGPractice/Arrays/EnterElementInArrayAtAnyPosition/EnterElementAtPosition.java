@@ -32,7 +32,18 @@ public class EnterElementAtPosition {
              {
                 arr[i+1]=arr[i];
              }
-             arr[pos]=ele;
+            
+             try
+             {
+                    arr[pos]=ele;
+             }
+             catch (Exception e) 
+             {
+                System.out.println(e.getMessage());
+                System.out.println("Enter Valid Position !!!");
+                System.exit(0);
+            }
+        
         }
     }
 }
