@@ -33,7 +33,7 @@ public class FindSecondLargestElement {
         System.out.println("Array After Sort : "+Arrays.toString(intArr));
 
 
-               System.out.println("Second Largest Element : "+intArr[intArr.length-2]);
+        System.out.println("Second Largest Element : "+intArr[intArr.length-2]);
 
 
     }
