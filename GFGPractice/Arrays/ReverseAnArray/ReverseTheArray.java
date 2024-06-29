@@ -20,6 +20,7 @@ public class ReverseTheArray {
         System.out.println("Reversed Array : "+Arrays.toString(revArr));
 */
 
+
         // Approach-02
         int startPtr = 0;
         int endPtr = intArr.length-1;
