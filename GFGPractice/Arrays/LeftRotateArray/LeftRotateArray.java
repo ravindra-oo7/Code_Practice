@@ -12,7 +12,7 @@ public class LeftRotateArray {
         System.out.println("Array Before rotation : "+Arrays.toString(orgArr));
  
         System.out.print("Enter rotations : ");
-        int rotations = sc.nextInt();
+        int rotations = sc.nextInt()%arrLen; // rotations can be more than arrLen hence % used
         
         // Approach-01
         int[] rttArr = new int[arrLen];
