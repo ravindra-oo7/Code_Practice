@@ -29,6 +29,7 @@ public class MoveZerosToEnd {
         System.err.println("Array After Process : "+Arrays.toString(newArr));
 */
 
+/* 
         // Approach-02
         for(int i=0;i<intArr.length;i++)
         {
@@ -38,6 +39,7 @@ public class MoveZerosToEnd {
                 {
                     if(intArr[j]!=0)
                     {
+                        // Swap(intArr[i],intArr[j])
                         int temp = intArr[i];
                         intArr[i] = intArr[j];
                         intArr[j] = temp;
@@ -46,8 +48,23 @@ public class MoveZerosToEnd {
             }
         }
         System.err.println("Array After Process : "+Arrays.toString(intArr));
+*/
 
-    }
+        // Approach-03
+        int count = 0;
+        for(int i=0;i<intArr.length;i++)
+        {
+            if(intArr[i]!=0)
+            {
+                // Swap(intArr[i],intArr[j])
+                int temp = intArr[i];
+                intArr[i] = intArr[count];
+                intArr[count] = temp;
+                count++;
+            }
+        }
+        System.err.println("Array After Process : "+Arrays.toString(intArr));
 
-   
+
+    }   
 }
