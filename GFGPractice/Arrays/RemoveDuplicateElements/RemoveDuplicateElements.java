@@ -21,6 +21,7 @@ public class RemoveDuplicateElements {
         System.out.println("Size : "+processedArr.length);
 */
 
+/* 
         // Approach-02
         Set <Integer> intSet = new HashSet<>();
         for (int i=0;i<intArr.length;i++)
@@ -32,6 +33,18 @@ public class RemoveDuplicateElements {
 
         System.out.println("Processed Array : " + Arrays.toString(newArr));
         System.out.println("Size : " + newArr.length);
+*/
+
+        // Approch-03
+        int[] processedArr = Arrays.stream(intArr)
+                                .distinct()
+                                .toArray();
+        // Resize the original array
+        intArr = new int[processedArr.length];
+        System.arraycopy(processedArr, 0, intArr, 0, intArr.length);
+
+        System.out.println("Array After Process : "+Arrays.toString(intArr));
+        System.out.println("Size : "+intArr.length);
 
     }
 }
