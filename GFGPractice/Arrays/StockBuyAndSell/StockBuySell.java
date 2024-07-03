@@ -5,9 +5,10 @@ public class StockBuySell {
     {
        int[] arr = {1,5,3,1,2,8,9}; // OP : 12
        //int[] arr = {1,5,3,8,12}; // OP : 13
+       //int[] arr = {2};
 
 /* 
-    //Approch-01
+    //Approch-01 //Not completed
         int maxProf = 0;
         for(int i=0;i<arr.length-1;i++)
         {
