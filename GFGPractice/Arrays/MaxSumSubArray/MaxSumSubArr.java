@@ -32,5 +32,6 @@ public class MaxSumSubArr {
             max = Math.max(maxEnd, max);
         }
         System.out.println("Max Sum = "+max);
+        
     }
 }
