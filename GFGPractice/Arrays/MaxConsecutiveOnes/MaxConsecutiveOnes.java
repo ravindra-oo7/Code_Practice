@@ -7,7 +7,7 @@ public class MaxConsecutiveOnes {
         //int[] arr = {};
         //int[] arr = {0,0,0};
 
-/*         
+        
     // Approach-01
         int max=0;
         int i=0;
@@ -20,17 +20,18 @@ public class MaxConsecutiveOnes {
                 counter++;
             }
 
-            if((i==arr.length-1 || arr[i+1]!=0) && counter>max)
+            else 
             {
-                max =counter;
+                max = Math.max(max, counter);
                 counter=0;
             }
+
             i++;
         }
         System.out.println("Ans : "+max);
-*/
 
 
+/* 
     // Approach-02
         int res = 0;
         int len = arr.length;
@@ -52,5 +53,8 @@ public class MaxConsecutiveOnes {
             res = Math.max(curr, res);
         }
         System.out.println("Ans : "+res);
+*/
+
+
     }
 }
