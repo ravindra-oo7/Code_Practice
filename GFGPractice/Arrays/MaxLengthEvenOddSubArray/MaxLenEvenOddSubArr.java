@@ -3,8 +3,8 @@ package Arrays.MaxLengthEvenOddSubArray;
 public class MaxLenEvenOddSubArr {
     public static void main(String[] args) 
     {
-        //int[] arr =  {10,12,14,7,8}; // Ans = 3
-        int[] arr = {7,10,13,14}; // Ans = 4
+        int[] arr =  {10,12,14,7,8}; // Ans = 3
+        //int[] arr = {7,10,13,14}; // Ans = 4
         //int[] arr = {10,12,8,4}; // Ans = 1
 
 /* 
@@ -32,7 +32,6 @@ public class MaxLenEvenOddSubArr {
                 }
                 else
                 {
-                    max = Math.max(max, counter);
                     counter = 1;
                 }
             }
@@ -45,14 +44,14 @@ public class MaxLenEvenOddSubArr {
                 }
                 else
                 {
-                    max = Math.max(max, counter);
                     counter = 1;
                 }
             }
         }
         System.out.println("Max Len : "+max);
- */        
+*/       
 
+ /* 
         // Approach-02
         int max = 1;
         int len = arr.length;
@@ -76,7 +75,26 @@ public class MaxLenEvenOddSubArr {
             max = Math.max(max, counter);
         } 
         System.out.println("Max Len : "+max);
+*/
 
+        // Approach-03
+        int max = 1;
+        int counter = 1;
+
+        for(int i=1;i<arr.length;i++)
+        {
+            if( (arr[i-1]%2 == 0 && arr[i]%2 != 0) ||
+                (arr[i-1]%2 != 0 && arr[i]%2 == 0))
+            {
+                counter++;
+                max = Math.max(max, counter);
+            }
+            else
+            {
+                counter=1;
+            }
+        }
+        System.out.println("Max Len = "+max);
 
     }
 }
