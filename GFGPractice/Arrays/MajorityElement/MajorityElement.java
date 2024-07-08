@@ -8,9 +8,9 @@ public class MajorityElement {
     public static void main(String[] args) 
     {
 
-        int[] arr = {8,3,4,8,8};
-        //int[] arr = {3,7,4,7,7,5};
-        //int[] arr = {2,3,4,5,5,5,5};
+        //int[] arr = {8,3,4,8,8}; // Majo ele = 8  
+        //int[] arr = {3,7,4,7,7,5}; // No Majority
+        int[] arr = {2,3,4,5,5,5,5}; // Majo ele = 5 
 
         System.out.println("Array : "+Arrays.toString(arr));
 
@@ -53,6 +53,7 @@ public class MajorityElement {
         }
 */
 
+/* 
         // Approach-02
         System.out.print("Indexes : ");
         boolean isPresent = false;
@@ -89,6 +90,42 @@ public class MajorityElement {
         {
             System.out.println("No Majority Element Present !!!");
         }
+*/
+
+        // Approch-03
+        int res=0;
+        int count=1;
+
+        for(int i=1;i<arr.length;i++)
+        {
+            if(arr[res] == arr[i])
+                count++;
+            else 
+                count--;
+
+            if(count==0)
+            {
+                res=i;
+                count=1;
+            }
+        }
+
+        count = 0;
+        for(int i=0;i<arr.length;i++)
+        {
+            if(arr[res]==arr[i])
+                count++;
+        }
+
+        if(count<=arr.length/2)
+        {
+            res = -1;
+        }
+
+        if(res!=-1)
+            System.out.println("Majority Element : "+arr[res]);
+        else
+            System.out.println("No Majority Element Present !!!");
 
     }
 }
