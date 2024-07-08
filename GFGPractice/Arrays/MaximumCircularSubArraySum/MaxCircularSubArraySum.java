@@ -8,13 +8,15 @@ public class MaxCircularSubArraySum {
         //int[] arr = {8,-4,3,-5,4}; // Max = 12
         int[] arr = {3,-4,5,7,-8,7}; // Max = 18
 
+        int len = arr.length;
 
-     // Approach-01
+
+     // Approach-01 Incomplete
         int max = arr[0];
         int endMax = arr[0];
         int counter = 0;
 
-        for(int i=1;i<arr.length;i++)
+        for(int i=1;i<len;i++)
         { 
             counter++; // to calculate maximum iterations
            
@@ -29,7 +31,7 @@ public class MaxCircularSubArraySum {
                 continue;
             }
 
-            if(i==arr.length-1  && counter<arr.length)
+            if(i==len-1  && counter<len)
             {
                 i=-1;
             }
@@ -38,6 +40,26 @@ public class MaxCircularSubArraySum {
         System.out.println("Max : "+max);
 
 
-        
+/* 
+        // Approach-02 by GFG
+        int max = arr[0];
+        for(int i=0;i<len;i++)
+        {
+            int currMax = arr[i];
+            int currSum = arr[i];
+
+            for(int j=1;j<len;j++)
+            {
+                int index = (i+j)%len;
+                currSum = currSum + arr[index];
+                currMax = Math.max(currMax, currSum);
+            }
+
+            max = Math.max(max,currMax);
+        }
+        System.out.println("Max : "+ max);
+*/
+
+
     }
 }
