@@ -14,7 +14,8 @@ public class FindSubArrOfGivenSum {
         System.out.print("Enter sum to find if SubArray is Present : ");
         int sum = sc.nextInt();
 
-        // Approach-01
+/*         
+        // Approach-01 Naive solution
         boolean isPresent = false;
         for(int i=0;i<len;i++)
         {
@@ -40,6 +41,32 @@ public class FindSubArrOfGivenSum {
         {
             System.out.println("Given Sum is not Possible !!");
         }
+*/
+
+        // Approach-02 
+
+        int tempSum = 0;
+        int counter = 0;
+
+        for(int i=0;i<len;i++)
+        {
+            if(tempSum<=sum)
+            {
+                tempSum = tempSum + arr[i];
+            }
+            
+            while(tempSum>sum)
+            {
+                tempSum = tempSum-(arr[counter]);
+                counter++;
+            }
+            if(tempSum == sum)
+            {
+                System.out.println("Sum Is Possible using SubArray");
+                System.exit(0);
+            }
+        }
+        System.out.println("Sum Not Possible !!!");
 
     }
     
