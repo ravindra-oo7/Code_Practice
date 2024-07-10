@@ -43,7 +43,7 @@ public class FindSubArrOfGivenSum {
         }
 */
 
-        // Approach-02 
+        // Approach-02 Sliding Window technique         
 
         int tempSum = 0;
         int counter = 0;
