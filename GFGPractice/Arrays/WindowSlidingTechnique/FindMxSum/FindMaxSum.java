@@ -1,4 +1,4 @@
-package Arrays.FindMxSum;
+package Arrays.WindowSlidingTechnique.FindMxSum;
 
 import java.util.Arrays;
 import java.util.Scanner;
@@ -33,13 +33,16 @@ public class FindMaxSum {
         System.out.println("Maximum Sum for "+k+" window : "+maxSum);
 */
 
-        // Approach-02
+    // Approach-02 Window sliding method
+    
         int currSum = 0;
+        // Making Window
         for(int i=0;i<k;i++)
         {
             currSum = currSum+arr[i];
         }
 
+        // Sliding Window
         int maxSum = currSum;
         for(int i=k;i<len;i++)
         {
