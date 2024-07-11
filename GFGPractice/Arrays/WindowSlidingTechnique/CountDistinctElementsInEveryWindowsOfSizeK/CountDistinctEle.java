@@ -17,13 +17,13 @@ public class CountDistinctEle {
         System.out.print("Enter Windows size : ");
         int k = sc.nextInt();
 
-
+/* 
     // Approach-01 //Use Linked Hash Set
 
-        int start=0, end=k, count=0;
+        int start=0, count=0;
         Set<Integer> set = new LinkedHashSet<>();
 
-        for(int i=start;i<(len-end+1);i++)
+        for(int i=start;i<(len-k+1);i++)
         {
             count = 0;
             set.clear();
@@ -35,6 +35,21 @@ public class CountDistinctEle {
                }
             }
             System.out.print(count+" ");
+        }
+*/
+
+    // Approach-02 Incomplete
+        
+        int count=0;
+        int start =0,end=k-1;
+        
+        Set<Integer> set = new LinkedHashSet<>();
+        for(int i=start;i<end;i++)
+        {
+               if(set.add(arr[i]))
+               {
+                    count++;
+               }
         }
 
 
