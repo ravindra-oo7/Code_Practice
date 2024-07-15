@@ -21,8 +21,8 @@ public class IsAnagramSentence {
         System.out.println(strBD2);
 
         
-        char[] str1Arr = strBD1.toString().;
-        char[] str2Arr = strBD2.toCharArray();
+        char[] str1Arr = strBD1.toString().toCharArray();
+        char[] str2Arr = strBD2.toString().toCharArray();
 
         for(int i=0;i<str1Arr.length;i++)
         {
