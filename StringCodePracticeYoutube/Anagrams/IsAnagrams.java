@@ -3,7 +3,7 @@ package Anagrams;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class Anagrams {
+public class IsAnagrams {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
@@ -14,8 +14,17 @@ public class Anagrams {
         String str2 = sc.next(); // Read second string (single word)
 
         // Convert the strings to character arrays
-        char[] str1Arr = str1.toCharArray();
-        char[] str2Arr = str2.toCharArray();
+        char[] str1Arr = new char[str1.length()];
+        char[] str2Arr = new char[str2.length()];
+
+        for(int i=0;i<str1.length();i++)
+        {
+            str1Arr[i] = Character.toLowerCase(str1.charAt(i));
+        }
+        for(int i=0;i<str2.length();i++)
+        {
+            str2Arr[i] = Character.toLowerCase(str2.charAt(i));
+        }
 
         // Sort the character arrays
         Arrays.sort(str1Arr);
