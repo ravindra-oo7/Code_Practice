@@ -12,6 +12,7 @@ public class EnterElementAtPosition {
             arr[0]=12;
             arr[1]=2;
             arr[2]=32;
+            
         System.out.println("Array Before Insert : "+ Arrays.toString(arr));
         
         System.out.print("Enter Element to Enter : ");

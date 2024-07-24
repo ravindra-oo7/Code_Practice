@@ -5,7 +5,7 @@ import java.util.Arrays;
 public class IsSorted {
     public static void main(String[] args) 
     {
-        int[] intArr = {10};
+        int[] intArr = {10,11,12,2,3};
         System.out.println("Array : "+Arrays.toString(intArr));
 
         if(intArr.length<2)

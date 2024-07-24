@@ -9,12 +9,8 @@ public class DeleteElementAtPosition {
 
         Scanner sc = new Scanner(System.in);
 
-        int[] arr = new int[5];
-            arr[0]=12;
-            arr[1]=2;
-            arr[2]=32;
-            arr[3]=42;
-            arr[4]=65;
+        int[] arr = {12,2,32,42,65};
+
         System.out.println("Array Before Delete : "+ Arrays.toString(arr));
         
         System.out.print("Enter element index to delete : ");
