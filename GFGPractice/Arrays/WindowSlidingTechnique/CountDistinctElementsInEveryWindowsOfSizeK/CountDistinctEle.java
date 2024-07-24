@@ -2,6 +2,8 @@ package Arrays.WindowSlidingTechnique.CountDistinctElementsInEveryWindowsOfSizeK
 
 import java.util.Arrays;
 import java.util.LinkedHashSet;
+import java.util.LinkedList;
+import java.util.List;
 import java.util.Scanner;
 import java.util.Set;
 
@@ -39,19 +41,34 @@ public class CountDistinctEle {
 */
 
     // Approach-02 Incomplete
-        
-        int count=0;
-        int start =0,end=k-1;
-        
-        Set<Integer> set = new LinkedHashSet<>();
-        for(int i=start;i<end;i++)
+                
+        //create Window
+        List<Integer> window = new LinkedList<>();
+        List<Integer> result = new LinkedList<>();
+
+        for(int i=0;i<k;i++)
         {
-               if(set.add(arr[i]))
-               {
-                    count++;
-               }
+            window.add(arr[i]); //k elements
         }
 
+        Set<Integer> set = new LinkedHashSet<>();
+        for(int i=k;i<=len;i++)
+        {
+            System.out.println("window : "+window);
+            set.clear();
+            for (Integer integer : window) 
+            {
+                set.add(integer);
+            }
+            result.add(set.size());
+
+            window.remove(0);
+            
+            if(i<len)
+              window.add(arr[i]);
+        }
+
+        System.out.println("Result : "+result);
 
 
     }

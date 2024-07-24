@@ -6,7 +6,8 @@ import java.util.Scanner;
 public class FindSubArrOfGivenSum {
     public static void main(String[] args) 
     {
-        int[] arr = {1,4,20,3,10,5};
+        //int[] arr = {1,4,20,3,10,5};
+        int[] arr = {4,7,-3,1,2};
 
         System.out.println("Array : "+Arrays.toString(arr));    
         int len = arr.length;
@@ -43,14 +44,15 @@ public class FindSubArrOfGivenSum {
         }
 */
 
-        // Approach-02 Sliding Window technique         
+        // Approach-02 Sliding Window technique 
+        `        
 
         int tempSum = 0;
         int counter = 0;
 
         for(int i=0;i<len;i++)
         {
-            if(tempSum<=sum)
+            if(tempSum<sum)
             {
                 tempSum = tempSum + arr[i];
             }
