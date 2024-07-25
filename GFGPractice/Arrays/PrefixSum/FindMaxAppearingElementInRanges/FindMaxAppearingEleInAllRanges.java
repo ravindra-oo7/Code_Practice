@@ -1,6 +1,9 @@
 package Arrays.PrefixSum.FindMaxAppearingElementInRanges;
 
+import java.util.Arrays;
 import java.util.LinkedHashMap;
+import java.util.LinkedList;
+import java.util.List;
 import java.util.Map;
 
 public class FindMaxAppearingEleInAllRanges 
@@ -12,6 +15,7 @@ public class FindMaxAppearingEleInAllRanges
 
         int len = left.length;
 
+/*          
         // Approach-01
         Map<Integer,Integer> map = new LinkedHashMap<>();
 
@@ -38,5 +42,19 @@ public class FindMaxAppearingEleInAllRanges
         }
 
         System.out.println("Result : "+result);
+*/
+
+        // Approach-02 Incomplete
+
+        int[] arr = new int[right[len-1]+2];
+        for(int i=0;i<len;i++)
+        {
+            arr[left[i]]++;
+            arr[right[i]+1]--;  
+        }
+        System.out.println("Array : "+Arrays.toString(arr));
+
+
+
     }    
 }
