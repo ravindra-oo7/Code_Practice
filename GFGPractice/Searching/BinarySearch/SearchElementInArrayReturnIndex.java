@@ -6,10 +6,10 @@ public class SearchElementInArrayReturnIndex
 {
     public static void main(String[] args) 
     {
-        int[] arr = {1,2,3,4,5,6}; //find k=2
+        //int[] arr = {1,2,3,4,5,6}; //find k=2
         //int[] arr = {5,15,25}; //k=25
         //int[] arr = {5,10,15,25,35}; //k=20
-        //int[] arr = {10,10}; //k=10
+        int[] arr = {10,10}; //k=10
         
         
         Scanner sc = new Scanner(System.in);
