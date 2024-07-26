@@ -21,12 +21,39 @@ public class IndexOfFirstOccuranceOfElement
         System.out.println(-1); 
 */
 
+
+/* 
         // Approach-02 Binary search -recursive
         int start = 0;
         int end = len-1;
         int reasult = search(arr,k,start,end);
         System.out.println(reasult);
+ */
 
+        // Approach-03 Binary Search Iterative Approach
+        int start = 0;
+        int end = len-1;
+
+        while(start<=end)
+        {
+            int mid = (start+end)/2;
+
+            if(arr[mid]>k)
+                end = mid-1;
+            else if(arr[mid]<k)
+                start = mid+1;
+            else
+            {
+                if(mid==0 || arr[mid-1]!= arr[mid])
+                {
+                    System.out.println(mid);
+                    return;
+                }
+                else
+                    end = mid-1;    
+            }        
+
+        }
 
     }
 
