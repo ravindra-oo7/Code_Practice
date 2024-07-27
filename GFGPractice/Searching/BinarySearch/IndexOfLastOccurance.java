@@ -9,8 +9,8 @@ public class IndexOfLastOccurance
 
         //int k = 20; // ans = 4
         //int k = 2; // ans = -1
-        //int k = 10; // ans = 2
-        int k = 40; // ans = 6
+        int k = 10; // ans = 2
+        //int k = 40; // ans = 6
         /* 
         // Approach-01
         for(int i=len-1;i>=0;i--)
@@ -26,13 +26,14 @@ public class IndexOfLastOccurance
                 
         int end = len-1;
         int start = 0;
-/* 
+
         // Approach-02 Recursive Approach
         int reasult = search(arr,k,start,end);
 
         System.out.println(reasult);
-*/
 
+
+/* 
         // Approach-03 Iterative Approach
 
         while(start<=end)
@@ -55,7 +56,7 @@ public class IndexOfLastOccurance
             }            
         }
         System.out.println(-1);
-
+*/
 
     }
 
