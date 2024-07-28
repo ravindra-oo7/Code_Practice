@@ -11,6 +11,15 @@ public class FindSquareRoot {
 
         // Approach-01
         System.out.println((int)Math.sqrt(numb));
+        System.out.println(Math.floor(Math.sqrt(numb)));
+
+        // Approach-02 
+        int i = 1;
+        while(i*i<=numb)
+        {
+            i++;
+        }
+        System.out.println(i-1);
 
     }
 }
