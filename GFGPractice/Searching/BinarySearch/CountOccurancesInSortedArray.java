@@ -15,6 +15,7 @@ public class CountOccurancesInSortedArray
         //int k = 40; // ans = 2
         int k = 50; // 0 
 
+/*         
         // Approach-01
         int counter = 0;
         for(int i=0;i<len;i++)
@@ -25,6 +26,12 @@ public class CountOccurancesInSortedArray
             }
         }
         System.out.println(counter);
+*/
+
+        // Approach-02
+        
+
+
 
     }    
 }
