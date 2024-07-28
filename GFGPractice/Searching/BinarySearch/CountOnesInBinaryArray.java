@@ -3,8 +3,9 @@ package Searching.BinarySearch;
 public class CountOnesInBinaryArray {
     public static void main(String[] args) 
     {
-        int[] arr = {0,0,0,1,1,1,1}; 
-        //int[] arr = {0,0,0,0};
+        //int[] arr = {0,0,0,1,1,1,1}; // ans = 4
+        int[] arr = {1,1,1,1,1}; // ans = 5
+        //int[] arr = {0,0,0,0}; // ans = 0
         int len = arr.length;
         
 /*        
@@ -42,7 +43,7 @@ public class CountOnesInBinaryArray {
                    start=mid+1;
                else
               {
-                  if(arr[mid-1]!=1)
+                  if(mid==0 || arr[mid-1]!=1)
                     return mid;
                   else
                   {
