@@ -11,7 +11,7 @@ public class SearchElementInArrayInfinteLong
         int x = 5; // ans = 4
         // Approach-01
         int ans = search(arr,x);
-        System.out.println(ans);
+        System.out.println(ans); 
         
     }
     
