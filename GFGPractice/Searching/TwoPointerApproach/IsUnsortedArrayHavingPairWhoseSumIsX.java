@@ -1,9 +1,10 @@
 package Searching.TwoPointerApproach;
 
-public class IsArrayHavingPairWhoseSumIsX 
+public class IsUnsortedArrayHavingPairWhoseSumIsX 
 {
     public static void main(String[] args) 
     {
+        //Hashing Is Best Approach when given array is Unsorted Array
         int[] arr = {3,5,9,2,8,10,11};
         int x = 17;
 
