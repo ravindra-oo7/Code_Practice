@@ -4,9 +4,9 @@ public class IsSortedArrayHavingTripletWhoseSumIsX {
     public static void main(String[] args) 
     {
         int[] arr = {2,3,4,8,9,20,40};
-        int x = 32; // ans = Yes 4+8+20 = 32  
+        //int x = 32; // ans = Yes 4+8+20 = 32  
         //int x = 69 ; // ans = Yes 9+20+40 = 69
-        //int x = 5 ; // ans = No
+        int x = 5 ; // ans = No
         
         int len = arr.length;
         boolean isFound = false;
