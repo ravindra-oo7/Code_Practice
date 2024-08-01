@@ -40,8 +40,5 @@ public class FindMedianOfTwoSortedArray
             System.out.println(arrFinal[lenFinal/2]);
         }
 
-
-
-
     }    
 }
