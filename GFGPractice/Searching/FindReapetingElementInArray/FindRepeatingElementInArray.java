@@ -26,6 +26,7 @@ public class FindRepeatingElementInArray
         System.out.println("No Repeating Element Found!!!");
 */
 
+/* 
         // Approach-02 naive Solution {Time = O(nlogn) && Space = O(1)}
         Arrays.sort(arr);
         for(int i = 0;i<len-1;i++)
@@ -34,6 +35,25 @@ public class FindRepeatingElementInArray
             {
                 System.out.println(arr[i]);
                 return;
+            }
+        }
+        System.out.println("No Repeating Element Found!!!");
+*/
+
+        // Approach-03 Efficiant Solution { Time = O(n) && Space = O(n) }
+
+        boolean[] arrBool = new boolean[len];
+
+        for(int i=0;i<len;i++)
+        {
+            if(arrBool[arr[i]]==true)
+            {
+                System.out.println(arr[i]);
+                return;
+            }
+            else
+            {
+                arrBool[arr[i]]=true;
             }
         }
         System.out.println("No Repeating Element Found!!!");
