@@ -30,7 +30,7 @@ public class FindMajorityElementInArray {
         System.out.println("No Majority!!!");
 */
 
-        // Approch-02
+        // Approch-02 Moore's voting algorithm
 
         //Finding a Candidate
         int res = 0;
