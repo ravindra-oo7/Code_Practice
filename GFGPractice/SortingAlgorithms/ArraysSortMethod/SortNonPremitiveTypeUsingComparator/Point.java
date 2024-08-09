@@ -1,12 +1,14 @@
-public class Point implements Comparable<Point>
+public class Point 
 {
     private int x;
     private int y;
+
 
     public Point(int x, int y) {
         this.x = x;
         this.y = y;
     }
+
 
     public int getX() {
         return x;
@@ -14,6 +16,8 @@ public class Point implements Comparable<Point>
     public void setX(int x) {
         this.x = x;
     }
+
+
     public int getY() {
         return y;
     }
@@ -21,13 +25,12 @@ public class Point implements Comparable<Point>
         this.y = y;
     }
 
+
     @Override
-    public int compareTo(Point p) 
-    {
-        return this.x - p.getX();
+    public String toString() {
+        return "Point [x=" + x + ", y=" + y + "]";
     }
     
-    
-    
+
     
 }
