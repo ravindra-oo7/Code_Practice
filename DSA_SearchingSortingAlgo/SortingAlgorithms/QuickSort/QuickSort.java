@@ -6,7 +6,7 @@ public class QuickSort
 {
     public static void main(String[] args) 
     {
-        int[] arr = {5,2,3,1,6,4,7,2};  // 8
+        int[] arr = {4,6,2,5,7,9,1,3};  // 8
         System.out.println("Orignal Array :"+Arrays.toString(arr));
         
         // Approach-01
@@ -26,6 +26,7 @@ public class QuickSort
         if(low<high)
         {
             int pIndex = partition(arr,low,high);
+           // System.out.println("Processing Array:"+ Arrays.toString(arr)); // Uncomment to watch array sorting proccess
             qs(arr, low, pIndex-1);
             qs(arr,pIndex+1,high);
         }
