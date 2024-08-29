@@ -1,4 +1,4 @@
-package DSA_SearchingSortingAlgo.SearchingAlgorithms.MergeSort;
+package DSA_SearchingSortingAlgo.SortingAlgorithms.MergeSort;
 
 import java.util.Arrays;
 

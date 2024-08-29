@@ -1,4 +1,4 @@
-package DSA_SearchingSortingAlgo.SearchingAlgorithms.BubbleSort;
+package DSA_SearchingSortingAlgo.SortingAlgorithms.BubbleSort;
 
 import java.util.Arrays;
 
