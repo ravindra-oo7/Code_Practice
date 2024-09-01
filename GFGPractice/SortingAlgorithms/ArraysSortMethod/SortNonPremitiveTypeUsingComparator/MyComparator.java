@@ -1,6 +1,6 @@
 import java.util.Comparator;
 
-public class MyComaparator implements Comparator<Point>
+public class MyComparator implements Comparator<Point>
 {
 
     @Override

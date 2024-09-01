@@ -1,4 +1,6 @@
-public class Point implements Comparable<Point>
+package SortingAlgorithms.ArraysSortMethod.SortList.SortListUsingComparator;
+
+public class Point
 {
     private int x;
     private int y;
@@ -20,11 +22,5 @@ public class Point implements Comparable<Point>
     public void setY(int y) {
         this.y = y;
     }
-
-    @Override
-    public int compareTo(Point p) 
-    {
-        return this.x - p.getX();
-    }
-    
+        
 }

@@ -1,4 +1,4 @@
-package SortingAlgorithms.ArraysSortMethod;
+package SortingAlgorithms.ArraysSortMethod.SortPremitiveArray;
 
 import java.util.Arrays;
 
@@ -6,7 +6,7 @@ public class ArraysSortMethod
 {
     public static void main(String[] args) 
     {
-        int [] arr = {5,20,12,30,2,33,44};
+        int [] arr = {9,8,7,6,5,4,3,2,1};
         char [] arr2 = {'B','V','A','Z','z','a'};
 
  /*        
@@ -17,7 +17,7 @@ public class ArraysSortMethod
 */
         
         //Sorting SubArray 
-        Arrays.sort(arr, 2, 5);
+        Arrays.sort(arr, 2, 4);
         Arrays.sort(arr2,1,4);
         
         

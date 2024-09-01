@@ -1,3 +1,5 @@
+package SortingAlgorithms.ArraysSortMethod.SortList.SortListUsingComparable;
+
 public class Point implements Comparable<Point>
 {
     private int x;
