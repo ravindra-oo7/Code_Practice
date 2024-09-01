@@ -18,8 +18,10 @@ public class MainClass {
         list.add(new Point(8, 4));
         list.add(new Point(22, 35));
 
-        Comparator<Point> MyComparator = new MyComparator();
-        Collections.sort(list,MyComparator);
+        // Comparator<Point> MyComparator = new MyComparator();
+        // Collections.sort(list,MyComparator);
+
+        Collections.sort(list,new MyComparator());
 
         for (Point point : list) 
         {

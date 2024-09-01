@@ -13,9 +13,10 @@ public class MainClass {
                         new Point(9,9)
                       };
 
-        Comparator<Point> myComptor = new MyComparator();              
-                      
-        Arrays.sort(arr,myComptor);
+        // Comparator<Point> myComptor = new MyComparator();                            
+        // Arrays.sort(arr,myComptor);
+
+        Arrays.sort(arr,new MyComparator());
 
         for(int i=0;i<arr.length;i++)
         {
