@@ -62,7 +62,7 @@ public class FindDuplicateElement {
         {
             if(!intSet.add(arrInt[i]))
             {
-                System.out.println(arrInt[i] +" ");
+                System.out.println("Duplicate Element :" +arrInt[i] +" ");
             }
         }
         

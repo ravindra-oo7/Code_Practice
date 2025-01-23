@@ -12,7 +12,7 @@ public class ReverseArray {
         
         int[] intArr = new int[arrSize];
 
-        for(int i=0;i<intArr.length;i++)
+        for(int i=0;i<arrSize;i++)
         {
             System.out.print("Enter Element "+(i+1)+" :");
             intArr[i] = sc.nextInt();
@@ -47,5 +47,7 @@ public class ReverseArray {
         }
         System.out.println(Arrays.toString(intArr));
 
+
+        
     }
 }
