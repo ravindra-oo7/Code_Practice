@@ -9,6 +9,8 @@ public class StrongNumber {
         System.out.print("Enter Number : ");
         int numbInput = sc.nextInt();
 
+        //The sum of Factorial of each digit of the number must be equal to the number itself. 
+        // eg. 145 = 1!+4!+5! = 1+24+120 = 145
         int numb = numbInput;
         int sum = 0;
         while(numb!=0)

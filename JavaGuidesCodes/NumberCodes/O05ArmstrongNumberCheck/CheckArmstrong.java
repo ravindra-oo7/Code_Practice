@@ -9,8 +9,12 @@ public class CheckArmstrong {
         System.out.print("Enter Number : ");
         int numb = sc.nextInt();
         String str = String.valueOf(numb);
+
+        //Armstrong number is a number that is equal to the addition of (digit)^numOfDigits.
+        //For example 0, 1, 153, 370, 371 and 407 are the Armstrong numbers.
+        // 153 = 1+125+27
         
-/*         
+        
         //Approach-01
         int sum = 0;
         int length = str.length();
@@ -28,8 +32,9 @@ public class CheckArmstrong {
         {
             System.out.println(numb+" is not Armstrong number !!");
         }
-*/      
+      
 
+/* 
         //Approach-02
         int orignalNumb = numb;
         int sum = 0;
@@ -50,7 +55,7 @@ public class CheckArmstrong {
         {
             System.out.println(orignalNumb+" is Not Armstrong Number !!!");
         }
-
+ */
         
     }
 }
